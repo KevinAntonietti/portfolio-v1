@@ -12,7 +12,7 @@ app.set('views', './views');
 app.set('view engine', 'ejs');
 
 // MW
-
+app.use(express.static(__dirname + '/public'));
 // Router
 app.use(router);
 
