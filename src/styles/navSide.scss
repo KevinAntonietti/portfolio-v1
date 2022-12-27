@@ -1,0 +1,24 @@
+@use 'vars';
+
+.navSide {
+    display: flex;
+    flex-direction: column;
+    &__wording {
+        font-family:vars.$second-font;
+        writing-mode: vertical-lr; 
+        margin: 0 auto 0;
+    }
+    &__line {
+    margin: 1.5rem auto 0;
+    border-left: solid 2px vars.$text-color;
+    height: 6rem;
+    }
+    
+    &__picto {
+        margin-top: 1.5rem;
+        
+        & svg {
+        width: 1.4rem;
+        fill: vars.$text-color;    }
+    }
+}

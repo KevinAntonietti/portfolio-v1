@@ -1,0 +1,26 @@
+@use 'vars';
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: vars.$second-font;
+    margin-bottom: 4rem;
+
+        &__logo {
+            width: 8rem;
+        }
+
+        &__nav {
+            display: flex;
+            flex-direction: row;
+
+                &__item {
+                    color: vars.$text-color;
+                    text-decoration: none;
+                    padding: 1rem;
+                }
+               
+        }
+}

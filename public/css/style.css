@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,300;0,700;1,300;1,700&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -52,12 +54,89 @@ table {
   border-spacing: 0;
 }
 
-body {
-  background-color: aqua;
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 4rem;
+}
+.header__logo {
+  width: 8rem;
+}
+.header__nav {
+  display: flex;
+  flex-direction: row;
+}
+.header__nav__item {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
 }
 
-h1 {
-  font-size: 3rem;
+.presentation {
+  margin-right: 5rem;
+}
+.presentation__title {
+  font-size: 3.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 4rem;
+  font-family: "Abril Fatface", serif;
+  letter-spacing: 0.2rem;
+}
+.presentation__title span {
+  padding-top: 1rem;
+}
+.presentation__description {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.2rem;
+  line-height: 1.8rem;
+}
+.presentation__description__link {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.navSide {
+  display: flex;
+  flex-direction: column;
+}
+.navSide__wording {
+  font-family: "Roboto", sans-serif;
+  writing-mode: vertical-lr;
+  margin: 0 auto 0;
+}
+.navSide__line {
+  margin: 1.5rem auto 0;
+  border-left: solid 2px white;
+  height: 6rem;
+}
+.navSide__picto {
+  margin-top: 1.5rem;
+}
+.navSide__picto svg {
+  width: 1.4rem;
+  fill: white;
+}
+
+.home-container {
+  display: flex;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+
+.container {
+  margin: auto;
+  width: 85vw;
+  padding-top: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
