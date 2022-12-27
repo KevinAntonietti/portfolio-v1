@@ -8,6 +8,10 @@
     font-family: vars.$second-font;
     margin-bottom: 4rem;
 
+    @media (max-width: 650px) {
+    flex-direction: column;
+    }
+
         &__logo {
             width: 8rem;
         }
@@ -15,12 +19,35 @@
         &__nav {
             display: flex;
             flex-direction: row;
+            flex-wrap: nowrap;
 
                 &__item {
+                    z-index: 0;
                     color: vars.$text-color;
-                    text-decoration: none;
                     padding: 1rem;
-                }
+                    text-decoration: none;
+                    position: relative;
+                    
+                    &::after{
+                        z-index: -1;
+                        content: '';
+                        background-color: rgba(vars.$display-color,1);
+                        position: absolute;
+                        left: 1rem;
+                        bottom: 1rem;
+                        width: 0%;
+                        height: 8px;
+                        transition: 0.3s ease-in-out;
+                        }
+                     
+                        &:hover {
+                            &::after{
+                                content: '';
+                                width: 70%;
+                               
+                            }
+                        }
+                    }
                
         }
 }

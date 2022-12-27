@@ -62,17 +62,40 @@ table {
   font-family: "Roboto", sans-serif;
   margin-bottom: 4rem;
 }
+@media (max-width: 650px) {
+  .header {
+    flex-direction: column;
+  }
+}
 .header__logo {
   width: 8rem;
 }
 .header__nav {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
 }
 .header__nav__item {
+  z-index: 0;
   color: white;
-  text-decoration: none;
   padding: 1rem;
+  text-decoration: none;
+  position: relative;
+}
+.header__nav__item::after {
+  z-index: -1;
+  content: "";
+  background-color: #f3d053;
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  width: 0%;
+  height: 8px;
+  transition: 0.3s ease-in-out;
+}
+.header__nav__item:hover::after {
+  content: "";
+  width: 70%;
 }
 
 .presentation {
