@@ -1,31 +1,39 @@
-@use 'vars';
+@use "vars";
 
 .navSide {
-    display: flex;
-    flex-direction: column;
-    &__wording {
-        font-family:vars.$second-font;
-        writing-mode: vertical-lr; 
-        margin: 0 auto 0;
+  display: flex;
+  flex-direction: column;
+
+  &__wording {
+    font-family: vars.$second-font;
+    writing-mode: vertical-lr;
+    margin: 0 auto 0;
+    @media (max-width: 650px) {
+      font-size: 1rem;
     }
-    &__line {
+  }
+  &__line {
     margin: 1.5rem auto 0;
     border-left: solid 2px vars.$text-color;
     height: 6rem;
-    }
+  }
+
+  &__picto {
     
-    &__picto {
+    & svg {
         margin-top: 1.5rem;
-        
-        & svg {
         width: 1.4rem;
-        fill: vars.$text-color; 
+        fill: vars.$text-color;
         filter: blur(0px) brightness(1);
         transition: 0.2s ease-in-out;
-            &:hover {
-                filter: blur(1.4px) brightness(1.5);
-                fill: vars.$display-color;
-            }   
-}
+        &:hover {
+            filter: blur(1.4px) brightness(1.5);
+            fill: vars.$display-color;
+        }
+      @media (max-width: 650px) {
+        width: 1rem;
+        margin-top: 0.75rem;
+        }
     }
+  }
 }

@@ -1,0 +1,27 @@
+@use "vars";
+
+.projectOverview {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  .projectOverview__container {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-right: 2rem;
+
+    &__preview {
+      & img {
+        width: 100%;
+      }
+    }
+
+    &__title {
+      display: flex;
+      justify-content: space-between;
+      font-family: vars.$second-font;
+      font-weight: 700;
+    }
+  }
+}

@@ -133,15 +133,18 @@ table {
   writing-mode: vertical-lr;
   margin: 0 auto 0;
 }
+@media (max-width: 650px) {
+  .navSide__wording {
+    font-size: 1rem;
+  }
+}
 .navSide__line {
   margin: 1.5rem auto 0;
   border-left: solid 2px white;
   height: 6rem;
 }
-.navSide__picto {
-  margin-top: 1.5rem;
-}
 .navSide__picto svg {
+  margin-top: 1.5rem;
   width: 1.4rem;
   fill: white;
   filter: blur(0px) brightness(1);
@@ -151,9 +154,42 @@ table {
   filter: blur(1.4px) brightness(1.5);
   fill: #f3d053;
 }
+@media (max-width: 650px) {
+  .navSide__picto svg {
+    width: 1rem;
+    margin-top: 0.75rem;
+  }
+}
 
 .home-container {
   display: flex;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.projectOverview {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.projectOverview .projectOverview__container {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin-right: 2rem;
+}
+.projectOverview .projectOverview__container__preview img {
+  width: 100%;
+}
+.projectOverview .projectOverview__container__title {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
 
 body {
