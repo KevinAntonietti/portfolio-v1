@@ -144,6 +144,12 @@ table {
 .navSide__picto svg {
   width: 1.4rem;
   fill: white;
+  filter: blur(0px) brightness(1);
+  transition: 0.2s ease-in-out;
+}
+.navSide__picto svg:hover {
+  filter: blur(1.4px) brightness(1.5);
+  fill: #f3d053;
 }
 
 .home-container {

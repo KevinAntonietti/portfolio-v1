@@ -19,6 +19,13 @@
         
         & svg {
         width: 1.4rem;
-        fill: vars.$text-color;    }
+        fill: vars.$text-color; 
+        filter: blur(0px) brightness(1);
+        transition: 0.2s ease-in-out;
+            &:hover {
+                filter: blur(1.4px) brightness(1.5);
+                fill: vars.$display-color;
+            }   
+}
     }
 }
