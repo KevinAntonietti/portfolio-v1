@@ -1,27 +1,62 @@
 @use "vars";
 
+
 .projectOverview {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 
   .projectOverview__container {
     display: flex;
     flex-direction: column;
-    width: 20%;
-    margin-right: 2rem;
+    margin-bottom: 2rem;
+    width: 48%;
+    height: 350px;
 
+    @media (max-width: 950px) {
+      width: 90%;
+      height: 250px;
+      }
+   
     &__preview {
+      height: 80%;
+      position: relative;
+    
       & img {
+        object-fit: cover;
+        height: 100%;
         width: 100%;
+        position: absolute;
+        transition: 0.5s ease-in-out;
       }
     }
 
     &__title {
       display: flex;
+      margin : 1rem 0 1rem ;
       justify-content: space-between;
       font-family: vars.$second-font;
       font-weight: 700;
     }
   }
+}
+
+.img-01 {
+  z-index: 2;
+  opacity: 1;
+}
+.img-02 {
+  z-index: 1;
+  opacity: 0;
+  filter: sepia(60%) blur(50) brightness(1.5);
+}
+
+.img-01:hover {
+opacity: 0;
+}
+
+.img-01:hover ~ .img-02 {
+  opacity: 1;
+  filter: sepia(70%) blur(0) brightness(1);
 }

@@ -92,22 +92,16 @@ table {
   width: 0%;
   height: 8px;
   transition: 0.3s ease-in-out;
+  filter: blur(2px) brightness(1);
 }
 .header__nav__item:hover::after {
   content: "";
   width: 70%;
+  filter: blur(3px) brightness(2.5);
 }
 
 .presentation {
   margin-right: 5rem;
-}
-.presentation__title {
-  font-size: 3.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 4rem;
-  font-family: "Abril Fatface", serif;
-  letter-spacing: 0.2rem;
 }
 .presentation__title span {
   padding-top: 1rem;
@@ -148,7 +142,7 @@ table {
   width: 1.4rem;
   fill: white;
   filter: blur(0px) brightness(1);
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in;
 }
 .navSide__picto svg:hover {
   filter: blur(1.4px) brightness(1.5);
@@ -175,21 +169,58 @@ table {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .projectOverview .projectOverview__container {
   display: flex;
   flex-direction: column;
-  width: 20%;
-  margin-right: 2rem;
+  margin-bottom: 2rem;
+  width: 48%;
+  height: 350px;
+}
+@media (max-width: 950px) {
+  .projectOverview .projectOverview__container {
+    width: 90%;
+    height: 250px;
+  }
+}
+.projectOverview .projectOverview__container__preview {
+  height: 80%;
+  position: relative;
 }
 .projectOverview .projectOverview__container__preview img {
+  object-fit: cover;
+  height: 100%;
   width: 100%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
 }
 .projectOverview .projectOverview__container__title {
   display: flex;
+  margin: 1rem 0 1rem;
   justify-content: space-between;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
+}
+
+.img-01 {
+  z-index: 2;
+  opacity: 1;
+}
+
+.img-02 {
+  z-index: 1;
+  opacity: 0;
+  filter: sepia(60%) blur(50) brightness(1.5);
+}
+
+.img-01:hover {
+  opacity: 0;
+}
+
+.img-01:hover ~ .img-02 {
+  opacity: 1;
+  filter: sepia(70%) blur(0) brightness(1);
 }
 
 body {
@@ -198,10 +229,24 @@ body {
   font-size: 20px;
 }
 
+h1 {
+  font-size: 3.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 4rem;
+  font-family: "Abril Fatface", serif;
+  letter-spacing: 0.2rem;
+}
+
 .container {
   margin: auto;
-  width: 85vw;
+  width: 75vw;
   padding-top: 2rem;
+}
+@media (max-width: 650px) {
+  .container {
+    width: 90vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

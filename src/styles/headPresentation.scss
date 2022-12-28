@@ -4,13 +4,6 @@
     margin-right: 5rem;
 
     &__title {
-        font-size: 3.5rem;
-        display: flex;
-        flex-wrap: wrap;
-        padding-bottom: 4rem;
-        font-family: vars.$first-font;
-        letter-spacing: 0.2rem;
-
         & span {
             padding-top: 1rem;
         }

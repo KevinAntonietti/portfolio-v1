@@ -25,11 +25,14 @@
         width: 1.4rem;
         fill: vars.$text-color;
         filter: blur(0px) brightness(1);
-        transition: 0.2s ease-in-out;
+        transition: 0.1s ease-in;
+
+        
         &:hover {
             filter: blur(1.4px) brightness(1.5);
             fill: vars.$display-color;
         }
+
       @media (max-width: 650px) {
         width: 1rem;
         margin-top: 0.75rem;

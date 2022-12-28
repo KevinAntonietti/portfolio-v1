@@ -38,12 +38,15 @@
                         width: 0%;
                         height: 8px;
                         transition: 0.3s ease-in-out;
+                        filter: blur(2px) brightness(1);
                         }
                      
                         &:hover {
                             &::after{
                                 content: '';
                                 width: 70%;
+                                filter: blur(3px) brightness(2.5);
+                                
                                
                             }
                         }
