@@ -20,12 +20,28 @@ body {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 5rem;
+    line-height: 7rem;
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 4rem;
     font-family: vars.$first-font;
     letter-spacing: 0.2rem;
+
+    @media (max-width: 1280px) {
+        font-size: 4rem;
+        line-height: 5rem;
+        }
+
+        @media (max-width: 1280px) {
+            font-size: 3rem;
+            line-height: 4rem;
+            }
+
+    @media (max-width: 650px) {
+        font-size: 3rem;
+        line-height: 3rem;
+        }
 }
 
 .container {
@@ -33,6 +49,6 @@ h1 {
     width: 75vw;
     padding-top: 2rem;
     @media (max-width: 650px) {
-        width: 90vw;
+        width: 85vw;
         }
 }

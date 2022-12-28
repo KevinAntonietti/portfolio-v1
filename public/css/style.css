@@ -103,6 +103,9 @@ table {
 .presentation {
   margin-right: 5rem;
 }
+.presentation__title {
+  display: flex;
+}
 .presentation__title span {
   padding-top: 1rem;
 }
@@ -193,7 +196,7 @@ table {
   height: 100%;
   width: 100%;
   position: absolute;
-  transition: 0.5s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
 .projectOverview .projectOverview__container__title {
   display: flex;
@@ -211,7 +214,7 @@ table {
 .img-02 {
   z-index: 1;
   opacity: 0;
-  filter: sepia(60%) blur(50) brightness(1.5);
+  filter: sepia(60%) blur(100) brightness(1.5);
 }
 
 .img-01:hover {
@@ -220,7 +223,7 @@ table {
 
 .img-01:hover ~ .img-02 {
   opacity: 1;
-  filter: sepia(70%) blur(0) brightness(1);
+  filter: sepia(10%) blur(0) brightness(1);
 }
 
 body {
@@ -230,12 +233,31 @@ body {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 5rem;
+  line-height: 7rem;
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 4rem;
   font-family: "Abril Fatface", serif;
   letter-spacing: 0.2rem;
+}
+@media (max-width: 1280px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+}
+@media (max-width: 1280px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
+@media (max-width: 650px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
 }
 
 .container {
@@ -245,7 +267,7 @@ h1 {
 }
 @media (max-width: 650px) {
   .container {
-    width: 90vw;
+    width: 85vw;
   }
 }
 

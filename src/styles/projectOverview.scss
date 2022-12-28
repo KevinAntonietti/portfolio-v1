@@ -28,7 +28,7 @@
         height: 100%;
         width: 100%;
         position: absolute;
-        transition: 0.5s ease-in-out;
+        transition: 0.7s ease-in-out;    
       }
     }
 
@@ -49,7 +49,7 @@
 .img-02 {
   z-index: 1;
   opacity: 0;
-  filter: sepia(60%) blur(50) brightness(1.5);
+  filter: sepia(60%) blur(100) brightness(1.5);
 }
 
 .img-01:hover {
@@ -58,5 +58,5 @@ opacity: 0;
 
 .img-01:hover ~ .img-02 {
   opacity: 1;
-  filter: sepia(70%) blur(0) brightness(1);
+  filter: sepia(10%) blur(0) brightness(1);
 }
