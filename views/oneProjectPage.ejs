@@ -1,1 +1,38 @@
-<p> <%=item.name  %> </p>
+<%- include('partials/header') %>
+
+<div class="projectHeader">
+  <!-- <span class="projectHeader__role"><%=item.role  %> </span> -->
+  <div class="projectHeader__title">
+    <h1 class="projectHeader__title__name"><%= item.name %></h1>
+    <p class="projectHeader__title__id">0<%= item.id %></p>
+  </div>
+  <div class="projectHeader__separation"></div>
+  <div class="projectHeader__introduction">
+    <div class="projectHeader__introduction__type"><%= item.type%></div>
+    <div class="tags"><%= item.tags%></div>
+  </div>
+  <div class="projectHeader__separation"></div>
+
+  <div class="projectHeader_information" >
+    <span class="projectHeader_information_role"><%= item.role%> </span>
+    <span class="projectHeader_information_year"><%= item.year%></span>
+    <span class="projectHeader_information_team"><%= item.team%></span>
+  </div>
+</div>
+
+<!-- 
+    <%- include('partials/headPresentation') %> 
+    <%- include('partials/navSide') %>  
+
+
+
+    <%- include('partials/headPresentation') %> 
+    <%- include('partials/navSide') %>  
+
+    <%- include('partials/headPresentation') %> 
+    <%- include('partials/navSide') %>  
+
+    <%- include('partials/headPresentation') %> 
+    <%- include('partials/navSide') %>  
+
+    <%- include('partials/footer') %>  -->

@@ -303,6 +303,40 @@ table {
   filter: sepia(10%) blur(0) brightness(1);
 }
 
+.projectHeader {
+  margin-top: 13rem;
+  display: flex;
+  flex-direction: column;
+}
+.projectHeader__role {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 2rem;
+  padding-left: 0.2rem;
+}
+.projectHeader__separation {
+  border-bottom: 0.7px solid rgba(255, 255, 255, 0.705);
+  margin: 1.5rem 0 1.5rem;
+}
+.projectHeader__title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.projectHeader__title__name {
+  display: flex;
+  align-items: baseline;
+  font-size: 7rem;
+  padding-bottom: 1rem;
+}
+.projectHeader__introduction {
+  display: flex;
+  justify-content: space-between;
+}
+.projectHeader__information {
+  display: flex;
+  justify-content: space-between;
+}
+
 body {
   background-color: #1d1d1d;
   font-family: "Roboto", sans-serif;

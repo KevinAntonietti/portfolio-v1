@@ -1,0 +1,41 @@
+@use "vars";
+
+.projectHeader {
+  // height: 90vh;
+  margin-top: 13rem;
+  display: flex;
+  flex-direction: column;
+
+  &__role {
+    font-family: vars.$font-second;
+    margin-bottom: 2rem;
+    padding-left: 0.2rem;
+  }
+
+  &__separation {
+    border-bottom: 0.7px solid vars.$color-grey;
+    margin: 1.5rem 0 1.5rem;
+  }
+
+  &__title {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    &__name {
+      display: flex;
+      align-items: baseline;
+      font-size: 7rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__introduction {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__information {
+  display: flex;
+ justify-content: space-between;}
+}
