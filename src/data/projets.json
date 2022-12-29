@@ -1,10 +1,27 @@
 [
     {
         "id": 1,
+        "thumbs":"test.jpg",
+        "picture01":"test.jpg",
+        "picture02":"test.jpg",
+        "picture03":"test.jpg",
+        "slug": "test-la",
+        "name": "Le test",
+        "year": "2024",
+        "type": "Site web",
+        "tags": ["React", "Express", "Vue.js"],
+        "duration": "1 mois",
+        "role" : "Product Owner",
+        "team": null,
+        "description": "C'était vraiment trop trop bien",
+        "link": "test.fr"
+    },
+    {
+        "id": 2,
+        "thumbs":"",
         "picture01":"",
         "picture02":"",
         "picture03":"",
-        "picture04":"",
         "slug": "",
         "name": "",
         "year": "",
@@ -14,6 +31,6 @@
         "role" : "",
         "team": null,
         "description": "",
-        "link": "",
-    },
+        "link": ""
+    }
 ]

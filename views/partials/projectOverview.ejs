@@ -1,18 +1,20 @@
 <div class="projectOverview">
 
+<% for (const item of projets) {%> 
+
   <div class="projectOverview__container">
     <a href="" class="projectOverview__container__preview">
       <img class="img-01" src="img/test.jpg" alt="" />
       <img class="img-02" src="img/AddTextureWrap.png" alt="" />
     </a>
     <h2 class="projectOverview__container__title">
-      Gamer Helper <span> __01</span>
+      <%= item.name  %> <span> __<%= item.id %> </span>
     </h2>
     <a class="projectOverview__container__link" href="/" target="_blank"> <p>Voir le site</p></a>
   </div>
+  <% }%> 
 
-
-  <div class="projectOverview__container">
+  <!-- <div class="projectOverview__container">
     <a href="" class="projectOverview__container__preview">
       <img class="img-01" src="img/test.jpg" alt="" />
       <img class="img-02" src="img/AddTextureWrap.png" alt="" />
@@ -21,7 +23,7 @@
       Gamer Helper <span> __01</span>
     </h2>
     <a class="link" href="/" target="_blank"> <p>Voir le site</p></a>
-  </div>
+  </div> -->
 
 
 
