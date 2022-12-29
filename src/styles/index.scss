@@ -1,54 +1,53 @@
-@use 'reset';
-@use 'vars';
-@use 'header';
-@use 'headPresentation';
-@use 'navSide';
-@use 'home';
-@use 'projectPage';
-@use 'projectOverview';
+@use "reset";
+@use "vars";
+@use "header";
+@use "headPresentation";
+@use "navSide";
+@use "home";
+@use "projectPage";
+@use "projectOverview";
 
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,300;0,700;1,300;1,700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,300;0,700;1,300;1,700&display=swap");
 
 body {
-    background-color: vars.$background-color;
-    color: vars.$text-color;
-    font-size: 20px;
+  background-color: vars.$color-background;
+  font-family: vars.$font-second;
+  color: vars.$color-text;
+  font-size: 20px;
 }
 
 h1 {
-    font-size: 5rem;
-    line-height: 7rem;
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 4rem;
-    font-family: vars.$first-font;
-    letter-spacing: 0.2rem;
+  font-size: 5rem;
+  line-height: 7rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 4rem;
+  font-family: vars.$font-first;
+  letter-spacing: 0.2rem;
 
-    @media (max-width: 1280px) {
-        font-size: 4rem;
-        line-height: 5rem;
-        }
+  @media (max-width: 1280px) {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
 
-        @media (max-width: 1280px) {
-            font-size: 3rem;
-            line-height: 4rem;
-            }
+  @media (max-width: 1280px) {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
 
-    @media (max-width: 650px) {
-        font-size: 3rem;
-        line-height: 3rem;
-        }
+  @media (max-width: 650px) {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
 }
 
 .container {
-    margin: auto;
-    width: 75vw;
-    padding-top: 2rem;
-    @media (max-width: 650px) {
-        width: 85vw;
-        }
+  margin: auto;
+  width: 75vw;
+  padding-top: 2rem;
+  @media (max-width: 650px) {
+    width: 85vw;
+  }
 }

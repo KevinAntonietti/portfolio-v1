@@ -5,7 +5,7 @@
   flex-direction: column;
 
   &__wording {
-    font-family: vars.$second-font;
+    font-family: vars.$font-second;
     writing-mode: vertical-lr;
     margin: 0 auto 0;
     @media (max-width: 650px) {
@@ -14,7 +14,7 @@
   }
   &__line {
     margin: 1.5rem auto 0;
-    border-left: solid 2px vars.$text-color;
+    border-left: solid 2px vars.$color-text;
     height: 6rem;
   }
 
@@ -23,14 +23,14 @@
     & svg {
         margin-top: 1.5rem;
         width: 1.4rem;
-        fill: vars.$text-color;
+        fill: vars.$color-text;
         filter: blur(0px) brightness(1);
         transition: 0.1s ease-in;
 
         
         &:hover {
             filter: blur(1.4px) brightness(1.5);
-            fill: vars.$display-color;
+            fill: vars.$color-display;
         }
 
       @media (max-width: 650px) {

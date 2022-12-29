@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    font-family: vars.$second-font;
+    font-family: vars.$font-second;
     margin-bottom: 4rem;
 
     @media (max-width: 650px) {
@@ -23,7 +23,7 @@
 
                 &__item {
                     z-index: 0;
-                    color: vars.$text-color;
+                    color: vars.$color-text;
                     padding: 1rem;
                     text-decoration: none;
                     position: relative;
@@ -31,7 +31,7 @@
                     &::after{
                         z-index: -1;
                         content: '';
-                        background-color: rgba(vars.$display-color,1);
+                        background-color: rgba(vars.$color-display,1);
                         position: absolute;
                         left: 1rem;
                         bottom: 1rem;

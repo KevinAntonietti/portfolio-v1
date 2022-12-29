@@ -5,6 +5,13 @@ const router = express.Router();
 const projets = require ("../../src/data/projets.json")
 
 router.get('/', function (req,res) {
+  res.locals = {
+    ...res.locals,
+    projets,
+    title: 'Kevin Antonietti',
+    description: 'Home',
+    url: '/',
+  };
     res.render('home')
 });
 

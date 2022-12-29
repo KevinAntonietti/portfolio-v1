@@ -179,16 +179,16 @@ table {
   flex-direction: column;
   margin-bottom: 2rem;
   width: 48%;
-  height: 350px;
+  height: 400px;
 }
 @media (max-width: 950px) {
   .projectOverview .projectOverview__container {
     width: 90%;
-    height: 250px;
+    height: 350px;
   }
 }
 .projectOverview .projectOverview__container__preview {
-  height: 80%;
+  height: 100%;
   position: relative;
 }
 .projectOverview .projectOverview__container__preview img {
@@ -196,14 +196,61 @@ table {
   height: 100%;
   width: 100%;
   position: absolute;
-  transition: 0.7s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.projectOverview .projectOverview__container__separation {
+  border-bottom: 0.7px solid rgba(255, 255, 255, 0.705);
+  margin: 0.7rem 0 0.7rem;
 }
 .projectOverview .projectOverview__container__title {
   display: flex;
-  margin: 1rem 0 1rem;
   justify-content: space-between;
+  align-items: center;
+}
+.projectOverview .projectOverview__container__title__name__project {
+  font-size: 2rem;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
+}
+.projectOverview .projectOverview__container__title__name__type {
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+.projectOverview .projectOverview__container__title__id {
+  font-size: 1rem;
+  padding-bottom: 0.1rem;
+}
+.projectOverview .projectOverview__container__next {
+  display: flex;
+  align-items: center;
+}
+.projectOverview .projectOverview__container__next__left {
+  padding-right: 1rem;
+}
+.projectOverview .projectOverview__container__next__left__description {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 800;
+}
+.projectOverview .projectOverview__container__next__left__tags {
+  margin-top: 0.3rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.projectOverview .projectOverview__container__next__link {
+  text-decoration: none;
+}
+.projectOverview .projectOverview__container__next__link svg {
+  width: 35px;
+  fill: rgba(255, 255, 255, 0.705);
+  filter: blur(0px) brightness(1);
+  transition: 0.1s ease-in;
+}
+.projectOverview .projectOverview__container__next__link svg:hover {
+  filter: blur(1.4px) brightness(1.5);
+  fill: #f3d053;
 }
 
 .img-01 {
@@ -227,7 +274,8 @@ table {
 }
 
 body {
-  background-color: black;
+  background-color: #1d1d1d;
+  font-family: "Roboto", sans-serif;
   color: white;
   font-size: 20px;
 }

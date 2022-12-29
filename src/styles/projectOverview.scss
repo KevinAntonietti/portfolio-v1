@@ -1,43 +1,96 @@
 @use "vars";
 
-
 .projectOverview {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
   .projectOverview__container {
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
     width: 48%;
-    height: 350px;
+    height: 400px;
 
     @media (max-width: 950px) {
       width: 90%;
-      height: 250px;
-      }
-   
+      height: 350px;
+    }
+
     &__preview {
-      height: 80%;
+      height: 100%;
       position: relative;
-    
+
       & img {
         object-fit: cover;
         height: 100%;
         width: 100%;
         position: absolute;
-        transition: 0.7s ease-in-out;    
+        transition: 0.5s ease-in-out;
       }
     }
 
+    &__separation {
+      border-bottom: 0.7px solid vars.$color-grey;
+      margin: 0.7rem 0 0.7rem;
+    }
     &__title {
       display: flex;
-      margin : 1rem 0 1rem ;
       justify-content: space-between;
-      font-family: vars.$second-font;
-      font-weight: 700;
+      align-items: center;
+      // margin: 0.5rem 0 0.5rem;
+      &__name {
+        &__project {
+          font-size: 2rem;
+          font-family: vars.$font-second;
+          font-weight: 700;
+        }
+
+        &__type {
+          font-size: 1rem;
+          margin-top: 0.3rem;
+        }
+      }
+
+      &__id {
+        font-size: 1rem;
+        padding-bottom: 0.1rem;
+      }
+    }
+    &__next {
+      display: flex;
+      align-items: center;
+      &__left {
+        padding-right: 1rem;
+        &__description {
+          font-size: 1.2rem;
+          line-height: 1.5rem;
+          font-weight: 800;
+        }
+        &__tags {
+          margin-top: 0.3rem;
+          color: vars.$color-text;
+          font-family: vars.$font-second;
+          font-size: 1rem;
+          font-weight: 300;
+        }
+      }
+
+      &__link {
+        text-decoration: none;
+        & svg {
+          width: 35px;
+          fill: vars.$color-grey;
+          filter: blur(0px) brightness(1);
+          transition: 0.1s ease-in;
+
+          &:hover {
+            filter: blur(1.4px) brightness(1.5);
+            fill: vars.$color-display;
+          }
+        }
+      }
     }
   }
 }
@@ -53,7 +106,7 @@
 }
 
 .img-01:hover {
-opacity: 0;
+  opacity: 0;
 }
 
 .img-01:hover ~ .img-02 {

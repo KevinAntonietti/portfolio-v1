@@ -1,11 +1,30 @@
 [
     {
         "id": 1,
-        "thumbs":"test.jpg",
+        "thumbs01":"Gamer_Helper_thumbs01.png",
+        "thumbs02":"Gamer_Helper_thumbs02.png",
         "picture01":"test.jpg",
         "picture02":"test.jpg",
         "picture03":"test.jpg",
-        "slug": "test-la",
+        "slug": "gamer-helper",
+        "name": "Gamer Helper",
+        "year": "2024",
+        "type": "Application web",
+        "tags": ["React", "Express", "Vue.js"],
+        "duration": "1 mois",
+        "role" : "Product Owner",
+        "team": null,
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+        "link": "https://gamer-helper.netlify.app/"
+    },
+    {
+        "id": 2,
+        "thumbs01":"Gamer_Helper_thumbs01.png",
+        "thumbs02":"Gamer_Helper_thumbs02.png",
+        "picture01":"test.jpg",
+        "picture02":"test.jpg",
+        "picture03":"test.jpg",
+        "slug": "gamer-helper",
         "name": "Le test",
         "year": "2024",
         "type": "Site web",
@@ -13,24 +32,7 @@
         "duration": "1 mois",
         "role" : "Product Owner",
         "team": null,
-        "description": "C'était vraiment trop trop bien",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore matrop trop bien",
         "link": "test.fr"
-    },
-    {
-        "id": 2,
-        "thumbs":"",
-        "picture01":"",
-        "picture02":"",
-        "picture03":"",
-        "slug": "",
-        "name": "",
-        "year": "",
-        "type": "",
-        "tags": ["", "", ""],
-        "duration": "",
-        "role" : "",
-        "team": null,
-        "description": "",
-        "link": ""
     }
 ]
