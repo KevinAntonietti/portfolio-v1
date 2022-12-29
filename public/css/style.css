@@ -212,13 +212,28 @@ table {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
+@media (max-width: 950px) {
+  .projectOverview .projectOverview__container__title__name__project {
+    font-size: 1.5rem;
+  }
+}
 .projectOverview .projectOverview__container__title__name__type {
   font-size: 1rem;
   margin-top: 0.3rem;
 }
+@media (max-width: 950px) {
+  .projectOverview .projectOverview__container__title__name__type {
+    font-size: 0.8rem;
+  }
+}
 .projectOverview .projectOverview__container__title__id {
   font-size: 1rem;
   padding-bottom: 0.1rem;
+}
+@media (max-width: 950px) {
+  .projectOverview .projectOverview__container__title__id {
+    font-size: 0.8rem;
+  }
 }
 .projectOverview .projectOverview__container__next {
   display: flex;
@@ -232,12 +247,22 @@ table {
   line-height: 1.5rem;
   font-weight: 800;
 }
+@media (max-width: 950px) {
+  .projectOverview .projectOverview__container__next__left__description {
+    font-size: 1rem;
+  }
+}
 .projectOverview .projectOverview__container__next__left__tags {
   margin-top: 0.3rem;
   color: white;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 300;
+}
+@media (max-width: 950px) {
+  .projectOverview .projectOverview__container__next__left__tags {
+    font-size: 0.8rem;
+  }
 }
 .projectOverview .projectOverview__container__next__link {
   text-decoration: none;
@@ -247,6 +272,11 @@ table {
   fill: rgba(255, 255, 255, 0.705);
   filter: blur(0px) brightness(1);
   transition: 0.1s ease-in;
+}
+@media (max-width: 950px) {
+  .projectOverview .projectOverview__container__next__link svg {
+    width: 25px;
+  }
 }
 .projectOverview .projectOverview__container__next__link svg:hover {
   filter: blur(1.4px) brightness(1.5);

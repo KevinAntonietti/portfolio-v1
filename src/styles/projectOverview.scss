@@ -39,23 +39,32 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      // margin: 0.5rem 0 0.5rem;
+      
       &__name {
         &__project {
           font-size: 2rem;
           font-family: vars.$font-second;
           font-weight: 700;
+          @media (max-width: 950px) {
+            font-size: 1.5rem;
+          }
         }
 
         &__type {
           font-size: 1rem;
           margin-top: 0.3rem;
+          @media (max-width: 950px) {
+            font-size: 0.8rem;
+          }
         }
       }
 
       &__id {
         font-size: 1rem;
         padding-bottom: 0.1rem;
+        @media (max-width: 950px) {
+          font-size: 0.8rem;
+        }
       }
     }
     &__next {
@@ -67,6 +76,9 @@
           font-size: 1.2rem;
           line-height: 1.5rem;
           font-weight: 800;
+          @media (max-width: 950px) {
+            font-size: 1rem;
+          }
         }
         &__tags {
           margin-top: 0.3rem;
@@ -74,6 +86,9 @@
           font-family: vars.$font-second;
           font-size: 1rem;
           font-weight: 300;
+          @media (max-width: 950px) {
+            font-size: 0.8rem;
+          }
         }
       }
 
@@ -84,6 +99,9 @@
           fill: vars.$color-grey;
           filter: blur(0px) brightness(1);
           transition: 0.1s ease-in;
+          @media (max-width: 950px) {
+            width: 25px;
+          }
 
           &:hover {
             filter: blur(1.4px) brightness(1.5);
