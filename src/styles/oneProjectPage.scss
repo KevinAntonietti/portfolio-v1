@@ -2,7 +2,7 @@
 
 .projectHeader {
   // height: 90vh;
-  margin-top: 13rem;
+  margin-top: 8rem;
   display: flex;
   flex-direction: column;
 
@@ -12,30 +12,136 @@
     padding-left: 0.2rem;
   }
 
+  
+    &__title {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+  
+      &__name {
+        display: flex;
+        align-items: baseline;
+        font-size: 7rem;
+        padding-bottom: 1rem;
+        @media (max-width: 1060px) {
+          font-size: 5rem;
+        }
+        @media (max-width: 780px) {
+          font-size: 3rem;
+        }
+      }
+    }
+
   &__separation {
     border-bottom: 0.7px solid vars.$color-grey;
     margin: 1.5rem 0 1.5rem;
-  }
-
-  &__title {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-
-    &__name {
-      display: flex;
-      align-items: baseline;
-      font-size: 7rem;
-      padding-bottom: 1rem;
+    &__lateral {
+      border-right: 0.7px solid vars.$color-grey;
     }
   }
 
   &__introduction {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 780px) {
+      font-size: 1rem;
+    }
   }
 
   &__information {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 780px) {
+      font-size: 1rem;
+    }
+    @media (max-width: 580px) {
+      font-size: 0.7rem;
+    }
+  }
+
+  &__description {
+    line-height: 2rem;
+    @media (max-width: 1060px) {
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+    }
+    @media (max-width: 780px) {
+      font-size: 1rem;
+      line-height: 1.4rem;
+    }
+  }
+
+  &__link {
+    display: flex;
+
+    &__website {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: vars.$color-text;
+      margin-right: 4rem;
+      &__svg {
+        width: 35px;
+        margin-left: 1rem;
+        fill: vars.$color-grey;
+        filter: blur(0px) brightness(1);
+        transition: 0.1s ease-in;
+      }
+    }
+
+      &__github {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: vars.$color-text;
+        &__svg {
+          width: 35px;
+          margin-left: 1rem;
+          fill: vars.$color-grey;
+          filter: blur(0px) brightness(1);
+          transition: 0.1s ease-in;
+        }
+      }
+   
+   
+  }
+}
+
+.projectGallery {
   display: flex;
- justify-content: space-between;}
+  flex-direction: column;
+  width: 100%;
+  margin-top: 7rem;
+  & img {
+    padding-bottom: 1rem;
+    // object-fit: cover;
+  }
+}
+
+.inconBack {
+  text-decoration: none;
+  color: vars.$color-text;
+  margin: 3rem auto;
+}
+
+
+
+.projectHeader__link__website__svg:hover {
+  filter: blur(1.4px) brightness(1.5);
+  fill: vars.$color-display;
+}
+.projectHeader__link__website__p:hover ~ .projectHeader__link__website__svg {
+  filter: blur(1.4px) brightness(1.5);
+  fill: vars.$color-display;
+}
+
+
+.projectHeader__link__github__svg:hover {
+  filter: blur(1.4px) brightness(1.5);
+  fill: vars.$color-display;
+}
+.projectHeader__link__github__p:hover ~ .projectHeader__link__github__svg {
+  filter: blur(1.4px) brightness(1.5);
+  fill: vars.$color-display;
 }
