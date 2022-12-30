@@ -20,8 +20,8 @@ body {
 }
 
 h1 {
-  font-size: 5rem;
-  line-height: 7rem;
+  font-size: 7rem;
+  line-height: 8rem;
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 4rem;
@@ -32,6 +32,11 @@ h1 {
   //   font-size: 4rem;
   //   line-height: 5rem;
   // }
+
+  @media (max-width: 1780px) {
+    font-size: 5rem;
+    line-height: 7rem;
+  }
 
   @media (max-width: 1280px) {
     font-size: 3rem;
@@ -48,6 +53,7 @@ h1 {
   margin: auto;
   width: 75vw;
   padding-top: 2rem;
+
   @media (max-width: 650px) {
     width: 85vw;
   }

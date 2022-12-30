@@ -1,18 +1,20 @@
 @use "vars";
+
 .home-container {
   display: flex;
 }
 
 .presentation {
-  margin: 2rem 5rem 4rem auto ;  
+  margin: 2rem 5rem 4rem auto;
 
   &__title {
     display: flex;
+
     & span {
       padding-top: 1rem;
     }
   }
-
+    
   &__description {
     display: flex;
     flex-wrap: wrap;
@@ -21,19 +23,19 @@
     line-height: 2rem;
 
     @media (max-width: 1470px) {
-        font-size: 1.1rem;
-        line-height: 1.8rem;
-      }
+      font-size: 1.1rem;
+      line-height: 1.8rem;
+    }
 
     @media (max-width: 1280px) {
-        font-size: 1.2rem;
-        line-height: 1.8rem;
-      }
-    
-      @media (max-width: 650px) {
-        font-size: 1rem;
-        line-height: 1.4rem;
-      }
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+    }
+
+    @media (max-width: 650px) {
+      font-size: 1rem;
+      line-height: 1.4rem;
+    }
 
     &__link {
       font-weight: 700;

@@ -484,18 +484,88 @@ table {
   display: flex;
   justify-content: space-around;
 }
-.aboutPage__header__img {
-  width: 30%;
+.aboutPage__header__left__up {
+  display: flex;
+  align-self: stretch;
 }
-.aboutPage__header__img img {
-  width: 250px;
+.aboutPage__header__left__up__img {
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  max-width: 185px;
 }
-.aboutPage__header__intro {
-  width: 30%;
+.aboutPage__header__left__up__img img {
+  width: 100%;
+}
+.aboutPage__header__left__up__title {
   display: flex;
 }
-.aboutPage__header__intro span {
+.aboutPage__header__left__up__title p {
   padding-top: 1rem;
+}
+.aboutPage__header__left__down {
+  display: flex;
+}
+@media (max-width: 650px) {
+  .aboutPage__header__left__down {
+    flex-direction: column;
+  }
+}
+.aboutPage__header__left__down__img {
+  width: 20%;
+  margin-right: 3rem;
+}
+@media (max-width: 1470px) {
+  .aboutPage__header__left__down__img {
+    width: 30%;
+  }
+}
+@media (max-width: 1280px) {
+  .aboutPage__header__left__down__img {
+    width: 35%;
+  }
+}
+@media (max-width: 650px) {
+  .aboutPage__header__left__down__img {
+    margin-bottom: 1rem;
+  }
+}
+.aboutPage__header__left__down__img img {
+  width: 100%;
+}
+.aboutPage__header__left__down__description {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  padding-right: 1rem;
+}
+@media (max-width: 1470px) {
+  .aboutPage__header__left__down__description {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+}
+@media (max-width: 1280px) {
+  .aboutPage__header__left__down__description {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+}
+@media (max-width: 1000px) {
+  .aboutPage__header__left__down__description {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+  }
+}
+@media (max-width: 650px) {
+  .aboutPage__header__left__down__description {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
 }
 
 body {
@@ -506,13 +576,19 @@ body {
 }
 
 h1 {
-  font-size: 5rem;
-  line-height: 7rem;
+  font-size: 7rem;
+  line-height: 8rem;
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 4rem;
   font-family: "Abril Fatface", serif;
   letter-spacing: 0.2rem;
+}
+@media (max-width: 1780px) {
+  h1 {
+    font-size: 5rem;
+    line-height: 7rem;
+  }
 }
 @media (max-width: 1280px) {
   h1 {
