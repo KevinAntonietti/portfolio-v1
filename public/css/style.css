@@ -484,17 +484,12 @@ table {
   display: flex;
   justify-content: space-around;
 }
+.aboutPage__header__left {
+  margin-right: 1.5rem;
+}
 .aboutPage__header__left__up {
   display: flex;
   align-self: stretch;
-}
-.aboutPage__header__left__up__img {
-  padding-right: 2rem;
-  padding-bottom: 2rem;
-  max-width: 185px;
-}
-.aboutPage__header__left__up__img img {
-  width: 100%;
 }
 .aboutPage__header__left__up__title {
   display: flex;
@@ -538,8 +533,7 @@ table {
   flex-wrap: wrap;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.2rem;
-  font-size: 1.6rem;
-  line-height: 2rem;
+  line-height: 1.8rem;
   padding-right: 1rem;
 }
 @media (max-width: 1470px) {
@@ -567,6 +561,19 @@ table {
     line-height: 1.4rem;
   }
 }
+.aboutPage__experience {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.aboutPage__experience__formation__title {
+  font-family: "Abril Fatface", serif;
+  font-size: 1.5rem;
+}
+
+.separation {
+  border-bottom: 0.7px solid rgba(255, 255, 255, 0.705);
+  margin: 0.7rem 0 0.7rem;
+}
 
 body {
   background-color: #1d1d1d;
@@ -576,8 +583,8 @@ body {
 }
 
 h1 {
-  font-size: 7rem;
-  line-height: 8rem;
+  font-size: 6rem;
+  line-height: 7rem;
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 4rem;
