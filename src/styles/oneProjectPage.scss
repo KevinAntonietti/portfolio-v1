@@ -5,6 +5,9 @@
   margin-top: 8rem;
   display: flex;
   flex-direction: column;
+  @media (max-width: 780px) {
+    margin-top: 4rem;
+  }
 
   &__role {
     font-family: vars.$font-second;
@@ -68,7 +71,7 @@
     }
     @media (max-width: 780px) {
       font-size: 1rem;
-      line-height: 1.4rem;
+      line-height: 1.6rem;
     }
   }
 
@@ -120,9 +123,21 @@
 }
 
 .inconBack {
+  margin: 3rem auto;
+  width: fit-content;
+  & svg {
+  fill: vars.$color-text;
+  width: 60px;
   text-decoration: none;
   color: vars.$color-text;
-  margin: 3rem auto;
+  filter: blur(0px) brightness(1);
+  transition: 0.1s ease-in;
+  &:hover {
+    filter: blur(1.4px) brightness(1.5);
+  fill: vars.$color-display;
+  }
+ 
+}
 }
 
 

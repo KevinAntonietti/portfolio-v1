@@ -308,6 +308,11 @@ table {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 780px) {
+  .projectHeader {
+    margin-top: 4rem;
+  }
+}
 .projectHeader__role {
   font-family: "Roboto", sans-serif;
   margin-bottom: 2rem;
@@ -376,7 +381,7 @@ table {
 @media (max-width: 780px) {
   .projectHeader__description {
     font-size: 1rem;
-    line-height: 1.4rem;
+    line-height: 1.6rem;
   }
 }
 .projectHeader__link {
@@ -421,9 +426,20 @@ table {
 }
 
 .inconBack {
+  margin: 3rem auto;
+  width: fit-content;
+}
+.inconBack svg {
+  fill: white;
+  width: 60px;
   text-decoration: none;
   color: white;
-  margin: 3rem auto;
+  filter: blur(0px) brightness(1);
+  transition: 0.1s ease-in;
+}
+.inconBack svg:hover {
+  filter: blur(1.4px) brightness(1.5);
+  fill: #f3d053;
 }
 
 .projectHeader__link__website__svg:hover {
