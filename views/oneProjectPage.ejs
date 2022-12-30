@@ -17,8 +17,16 @@
       <span class="projectHeader__information_role"><%= item.role%> </span>
       <span class="projectHeader__separation__lateral"></span>
       <span class="projectHeader__information__year"><%= item.year%></span>
-      <span class="projectHeader__separation__lateral"></span>
-      <span class="projectHeader__information__team"><%= item.team%></span>
+      
+
+
+      <% if (item.team !== null) { %> 
+        <span class="projectHeader__separation__lateral"></span>
+  
+        <span class="projectHeader__information__team"><%= item.team%></span>
+        <% } %> 
+
+
     </div>
     <div class="projectHeader__separation"></div>
 

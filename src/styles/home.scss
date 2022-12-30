@@ -1,3 +1,43 @@
-@use 'vars';
+@use "vars";
 .home-container {
-display: flex;}
+  display: flex;
+}
+
+.presentation {
+  margin: 2rem 5rem 4rem auto ;  
+
+  &__title {
+    display: flex;
+    & span {
+      padding-top: 1rem;
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: vars.$font-second;
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+
+    @media (max-width: 1470px) {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+      }
+
+    @media (max-width: 1280px) {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+      }
+    
+      @media (max-width: 650px) {
+        font-size: 1rem;
+        line-height: 1.4rem;
+      }
+
+    &__link {
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+  }
+}

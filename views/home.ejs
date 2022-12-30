@@ -1,10 +1,32 @@
-<%- include('partials/header')  %> 
+<%- include('partials/header') %>
 
 <div class="home-container">
-    <%- include('partials/headPresentation') %> 
-    <%- include('partials/navSide') %>  
+  <section class="presentation">
+    <h1 class="presentation__title">
+      <p>Kevin Antonietti</p>
+      <p>Développeur frontend</p>
+      <p>Javascript,</p>
+      <p>React, Node.js</p>
+    </h1>
+
+    <div class="presentation__description">
+      <span class="presentation__description__text">
+        Au cours de ma carrière de 8 ans en tant que directeur artistique, j'ai
+        eu l'opportunité de travailler avec de nombreuses structures. J'ai réalisé une grande variété de projets, allant de la
+        réalisation de campagnes de relations presse à la création de contenu de
+        communication sur les réseaux sociaux. J'ai également enseigné le motion
+        design et la PAO pendant trois ans à l'ISCOM Lyon. C'est en travaillant
+        avec des développeurs que j'ai réalisé mon intérêt pour ce domaine, j’ai
+        donc décidé de me réorienter. Après avoir suivi une formation de six
+        mois, je suis maintenant à la recherche d'une entreprise pour vivre ma
+        première expérience de développeur.
+      </span>
+      <span class="presentation__description__link">En savoir plus ></span>
+    </div>
+  </section>
+
+  <%- include('partials/navSide') %>
 </div>
 
-<%- include('partials/projectOverview')  %>   
-
-<%- include('partials/footer') %> 
+<h1>Mes projets</h1>
+<%- include('partials/projectOverview') %> <%- include('partials/footer') %>

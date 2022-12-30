@@ -1,0 +1,20 @@
+.aboutPage {
+  &__header {
+    display: flex;
+    justify-content: space-around;
+    &__img {
+      width: 30%;
+      & img {
+        width: 250px;
+    }
+    }
+
+    &__intro {
+        width: 30%;
+      display: flex;
+      & span {
+        padding-top: 1rem;
+      }
+    }
+  }
+}

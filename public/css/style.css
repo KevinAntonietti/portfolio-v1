@@ -100,27 +100,6 @@ table {
   filter: blur(1px) brightness(1.1);
 }
 
-.presentation {
-  margin-right: 5rem;
-}
-.presentation__title {
-  display: flex;
-}
-.presentation__title span {
-  padding-top: 1rem;
-}
-.presentation__description {
-  display: flex;
-  flex-wrap: wrap;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.2rem;
-  line-height: 1.8rem;
-}
-.presentation__description__link {
-  font-weight: 700;
-  font-size: 1.3rem;
-}
-
 .navSide {
   display: flex;
   flex-direction: column;
@@ -160,6 +139,45 @@ table {
 
 .home-container {
   display: flex;
+}
+
+.presentation {
+  margin: 2rem 5rem 4rem auto;
+}
+.presentation__title {
+  display: flex;
+}
+.presentation__title span {
+  padding-top: 1rem;
+}
+.presentation__description {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.2rem;
+  line-height: 2rem;
+}
+@media (max-width: 1470px) {
+  .presentation__description {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+}
+@media (max-width: 1280px) {
+  .presentation__description {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+}
+@media (max-width: 650px) {
+  .presentation__description {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+}
+.presentation__description__link {
+  font-weight: 700;
+  font-size: 1.3rem;
 }
 
 .project-container {
@@ -462,6 +480,24 @@ table {
   fill: #f3d053;
 }
 
+.aboutPage__header {
+  display: flex;
+  justify-content: space-around;
+}
+.aboutPage__header__img {
+  width: 30%;
+}
+.aboutPage__header__img img {
+  width: 250px;
+}
+.aboutPage__header__intro {
+  width: 30%;
+  display: flex;
+}
+.aboutPage__header__intro span {
+  padding-top: 1rem;
+}
+
 body {
   background-color: #1d1d1d;
   font-family: "Roboto", sans-serif;
@@ -480,20 +516,14 @@ h1 {
 }
 @media (max-width: 1280px) {
   h1 {
-    font-size: 4rem;
-    line-height: 5rem;
-  }
-}
-@media (max-width: 1280px) {
-  h1 {
     font-size: 3rem;
     line-height: 4rem;
   }
 }
 @media (max-width: 650px) {
   h1 {
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 }
 

@@ -39,9 +39,9 @@ router.get(function (req,res) {
 
 // Route to the various projects
 router.get('/projets/:slug', function (req,res) {
-
+  const { slug } = req.params;
   const item = projets.find(
-    (elem) => elem.slug,
+    (elem) => elem.slug === slug,
   );
   res.locals = {
       ...res.locals,
@@ -51,6 +51,20 @@ router.get('/projets/:slug', function (req,res) {
       url: `/projets/${item.slug}`,
     };
   res.render('oneProjectPage')
+});
+
+
+// Route to about
+router.get('/about', function (req,res) {
+  
+  res.locals = {
+      ...res.locals,
+      projets,
+      title: `à propos`,
+      description: '',
+      url: `/about`,
+    };
+  res.render('about')
 });
 
 
