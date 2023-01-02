@@ -86,11 +86,94 @@
   &__experience {
     margin-top: 4rem;
     margin-bottom: 4rem;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    @media (max-width: 1280px) {
+      font-size: 0.9rem;
+      line-height: 1.3rem;
+    }
+
+    @media (max-width: 800px) {
+   flex-wrap: wrap;
+    }
 
     &__formation {
-      &__title {
-        font-family: vars.$font-first;
+      width: 40%;
+      margin-right: 6rem;
+      margin-top: 3rem;
+      @media (max-width: 800px) {
+        width: 100%;
+         }
+    }
+
+    &__pro{
+      width: 50%;
+      margin-top: 3rem;
+      @media (max-width: 800px) {
+        width: 100%;
+         }
+    }
+
+    &__title {
+      font-family: vars.$font-first;
+      font-size: 3rem;
+      line-height: 4rem;
+      @media (max-width: 1280px) {
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+    }
+
+    &__structure {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin: 1rem auto 0.5rem;
+
+      &__name {
         font-size: 1.5rem;
+        font-weight: 800;
+        margin-top: 2rem;
+        @media (max-width: 1280px) {
+          font-size: 1.2rem;
+        }
+
+        @media (max-width: 960px) {
+          font-size: 1rem;
+        }
+      }
+
+      &__date {
+        font-size: 1rem;
+        @media (max-width: 1280px) {
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    &__poste {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1rem auto 0.5rem;
+
+      &__name {
+        font-size: 1rem;
+        width: 70%;
+      }
+
+      &__city {
+        font-size: 1rem;
+      }
+    }
+
+    &__informations {
+
+      & li {
+        margin: 0.5rem auto;
       }
     }
   }
@@ -98,5 +181,11 @@
 
 .separation {
   border-bottom: 0.7px solid vars.$color-grey;
-      margin: 0.7rem 0 0.7rem;
-    }
+  margin: 0.7rem 0 0.7rem;
+}
+
+.separation-light {
+  border-bottom: 0.7px solid vars.$color-grey;
+  filter: contrast(0.1);
+  margin: 0.7rem 0 0.7rem;
+}

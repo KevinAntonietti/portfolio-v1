@@ -27,6 +27,9 @@
                     padding: 1rem;
                     text-decoration: none;
                     position: relative;
+                    @media (max-width: 450px) {
+                        font-size: 1rem ;
+                      }
                     
                     &::after{
                         z-index: -1;

@@ -61,6 +61,12 @@
     @media (max-width: 580px) {
       font-size: 0.7rem;
     }
+
+    &__team {
+    @media (max-width: 450px) {
+      font-size: 0.5rem;
+    }
+    }
   }
 
   &__description {

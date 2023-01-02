@@ -82,6 +82,11 @@ table {
   text-decoration: none;
   position: relative;
 }
+@media (max-width: 450px) {
+  .header__nav__item {
+    font-size: 1rem;
+  }
+}
 .header__nav__item::after {
   z-index: -1;
   content: "";
@@ -178,6 +183,8 @@ table {
 .presentation__description__link {
   font-weight: 700;
   font-size: 1.3rem;
+  text-decoration: none;
+  color: white;
 }
 
 .project-container {
@@ -387,6 +394,11 @@ table {
     font-size: 0.7rem;
   }
 }
+@media (max-width: 450px) {
+  .projectHeader__information__team {
+    font-size: 0.5rem;
+  }
+}
 .projectHeader__description {
   line-height: 2rem;
 }
@@ -564,14 +576,106 @@ table {
 .aboutPage__experience {
   margin-top: 4rem;
   margin-bottom: 4rem;
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
-.aboutPage__experience__formation__title {
+@media (max-width: 1280px) {
+  .aboutPage__experience {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+}
+@media (max-width: 800px) {
+  .aboutPage__experience {
+    flex-wrap: wrap;
+  }
+}
+.aboutPage__experience__formation {
+  width: 40%;
+  margin-right: 6rem;
+  margin-top: 3rem;
+}
+@media (max-width: 800px) {
+  .aboutPage__experience__formation {
+    width: 100%;
+  }
+}
+.aboutPage__experience__pro {
+  width: 50%;
+  margin-top: 3rem;
+}
+@media (max-width: 800px) {
+  .aboutPage__experience__pro {
+    width: 100%;
+  }
+}
+.aboutPage__experience__title {
   font-family: "Abril Fatface", serif;
+  font-size: 3rem;
+  line-height: 4rem;
+}
+@media (max-width: 1280px) {
+  .aboutPage__experience__title {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+.aboutPage__experience__structure {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 1rem auto 0.5rem;
+}
+.aboutPage__experience__structure__name {
   font-size: 1.5rem;
+  font-weight: 800;
+  margin-top: 2rem;
+}
+@media (max-width: 1280px) {
+  .aboutPage__experience__structure__name {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 960px) {
+  .aboutPage__experience__structure__name {
+    font-size: 1rem;
+  }
+}
+.aboutPage__experience__structure__date {
+  font-size: 1rem;
+}
+@media (max-width: 1280px) {
+  .aboutPage__experience__structure__date {
+    font-size: 0.9rem;
+  }
+}
+.aboutPage__experience__poste {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem auto 0.5rem;
+}
+.aboutPage__experience__poste__name {
+  font-size: 1rem;
+  width: 70%;
+}
+.aboutPage__experience__poste__city {
+  font-size: 1rem;
+}
+.aboutPage__experience__informations li {
+  margin: 0.5rem auto;
 }
 
 .separation {
   border-bottom: 0.7px solid rgba(255, 255, 255, 0.705);
+  margin: 0.7rem 0 0.7rem;
+}
+
+.separation-light {
+  border-bottom: 0.7px solid rgba(255, 255, 255, 0.705);
+  filter: contrast(0.1);
   margin: 0.7rem 0 0.7rem;
 }
 
