@@ -68,4 +68,17 @@ router.get('/about', function (req,res) {
 });
 
 
+// Route to contact
+router.get('/contact', function (req,res) {
+  
+  res.locals = {
+      ...res.locals,
+      projets,
+      title: `Contact`,
+      description: '',
+      url: `/contact`,
+    };
+  res.render('contact')
+});
+
 module.exports = router;

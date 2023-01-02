@@ -22,7 +22,8 @@
     
     & svg {
         margin-top: 1.5rem;
-        width: 1.4rem;
+        width: 24px;
+        height: 24px;
         fill: vars.$color-text;
         filter: blur(0px) brightness(1);
         transition: 0.1s ease-in;

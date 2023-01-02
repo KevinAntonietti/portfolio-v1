@@ -84,7 +84,7 @@ table {
 }
 @media (max-width: 450px) {
   .header__nav__item {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 .header__nav__item::after {
@@ -126,7 +126,8 @@ table {
 }
 .navSide__picto svg {
   margin-top: 1.5rem;
-  width: 1.4rem;
+  width: 24px;
+  height: 24px;
   fill: white;
   filter: blur(0px) brightness(1);
   transition: 0.1s ease-in;
@@ -677,6 +678,14 @@ table {
   border-bottom: 0.7px solid rgba(255, 255, 255, 0.705);
   filter: contrast(0.1);
   margin: 0.7rem 0 0.7rem;
+}
+
+.contactContenair {
+  display: flex;
+  justify-content: space-between;
+}
+.contactContenair__left {
+  margin: 6rem 0 0 10rem;
 }
 
 body {
