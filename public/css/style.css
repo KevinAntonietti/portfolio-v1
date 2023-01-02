@@ -687,6 +687,23 @@ table {
 .contactContenair__left {
   margin: 6rem 0 0 10rem;
 }
+.contactContenair__left h2 {
+  font-family: "Abril Fatface", serif;
+  font-size: 2rem;
+}
+.contactContenair__left p {
+  margin-top: 1.7rem;
+}
+@media (max-width: 860px) {
+  .contactContenair__left {
+    margin: 2rem 0 0 5rem;
+  }
+}
+@media (max-width: 550px) {
+  .contactContenair__left {
+    margin: 1rem 0 0 2rem;
+  }
+}
 
 body {
   background-color: #1d1d1d;
