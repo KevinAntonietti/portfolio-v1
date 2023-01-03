@@ -1,32 +1,64 @@
-let isDark = false;
+let isLight = false;
 const app = {
+  init: () => {
+    app.toggleColorMod();
+  },
 
-    init: () => {
-    app.toggleColorMod()
-    },
+  toggleColorMod: () => {
+    // Body element
+    const btn = document.getElementById("btn-mode");
 
-    toggleColorMod :() => {
-        const btn = document.getElementById('btn-mode');
+    // Navside element
+    const navside = document.querySelectorAll(".navSide__picto__svg");
 
-        // Navside element
-        const navside = document.querySelectorAll(".navSide__picto__svg")
-        const navsideLine= document.querySelector(".navSide__line")
-        console.log(navsideLine);
-       
-        //Header element
-        const logoHeader = document
-       
-          btn.addEventListener('click', () => {
-            isDark = !isDark;
-            // CHanger dans le body
-            document.body.classList.toggle('light-mode-body');
+    //Header element
+    const headerLogo = document.querySelector(".header__logo__svg");
 
-            //changer dans la navside
-            navside.forEach(item => {item.classList.toggle('light-mode-svg');
-            })
-            navsideLine.classList.toggle('light-mode-line')
-        });    
-    }
-}
+    // projet element
+    const projectOverview = document.querySelectorAll(
+      ".projectOverview__container__next__link__svg"
+    );
 
-document.addEventListener('DOMContentLoaded', app.init());
+    //oneProjectPage element
+    const projectPageWebsite = document.querySelectorAll(
+      ".projectHeader__link__website__svg"
+    );
+    const projectPageGitHub = document.querySelectorAll(
+      ".projectHeader__link__github__svg"
+    );
+    const projectPageBack = document.querySelectorAll(".inconBack__svg");
+
+    btn.addEventListener("click", () => {
+      isLight = !isLight;
+      // CHanger dans le body
+      document.body.classList.toggle("light-mode-body");
+
+      //changer dans la navside
+      navside.forEach((item) => {
+        item.classList.toggle("light-mode-svg");
+      });
+
+      //changer dans le header
+      headerLogo.classList.toggle("light-mode-svg");
+
+      // Changer dans la page projetOverview
+      projectOverview.forEach((item) => {
+        item.classList.toggle("light-mode-svg");
+      });
+
+      // CHanger dans la page projet
+      projectPageWebsite.forEach((item) => {
+        item.classList.toggle("light-mode-svg");
+      });
+      projectPageGitHub.forEach((item) => {
+        item.classList.toggle("light-mode-svg");
+      });
+
+      projectPageBack.forEach((item) => {
+        item.classList.toggle("light-mode-svg");
+      });
+    });
+  },
+};
+
+document.addEventListener("DOMContentLoaded", app.init());

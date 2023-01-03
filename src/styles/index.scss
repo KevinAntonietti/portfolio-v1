@@ -20,12 +20,10 @@
 }
 
 .light-mode-svg {
-  fill: vars.$color-text-light;
+  fill: vars.$color-text-light ;
  }
 
- .light-mode-line {
-  border-left: solid 2px vars.$color-text-light;
- }
+
 
 body {
   
@@ -35,6 +33,8 @@ body {
   font-size: 20px;
   min-height: 100%
 }
+
+
 
 h1 {
   font-size: 6rem;

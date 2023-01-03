@@ -69,10 +69,9 @@ table {
 }
 .header__logo {
   width: 8rem;
-  color: aqua;
 }
-.header__logo img {
-  fill: aqua;
+.header__logo__svg {
+  fill: white;
 }
 .header__nav {
   display: flex;
@@ -81,7 +80,7 @@ table {
 }
 .header__nav__item {
   z-index: 0;
-  color: white;
+  color: inherit;
   padding: 1rem;
   text-decoration: none;
   position: relative;
@@ -125,7 +124,7 @@ table {
 }
 .navSide__line {
   margin: 1.5rem auto 0;
-  border-left: solid 2px white;
+  border-left: solid 2px;
   height: 6rem;
 }
 .navSide__picto__svg {
@@ -229,7 +228,8 @@ table {
   transition: 0.3s ease-in-out;
 }
 .projectOverview .projectOverview__container__separation {
-  border-bottom: 0.7px solid rgba(255, 255, 255, 0.705);
+  border-bottom: 0.7px solid;
+  opacity: 0.7;
   margin: 0.7rem 0 0.7rem;
 }
 .projectOverview .projectOverview__container__title {
@@ -284,7 +284,6 @@ table {
 }
 .projectOverview .projectOverview__container__next__left__tags {
   margin-top: 0.3rem;
-  color: white;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 300;
@@ -297,18 +296,18 @@ table {
 .projectOverview .projectOverview__container__next__link {
   text-decoration: none;
 }
-.projectOverview .projectOverview__container__next__link svg {
+.projectOverview .projectOverview__container__next__link__svg {
   width: 35px;
   fill: rgba(255, 255, 255, 0.705);
   filter: blur(0px) brightness(1);
   transition: 0.1s ease-in;
 }
 @media (max-width: 950px) {
-  .projectOverview .projectOverview__container__next__link svg {
+  .projectOverview .projectOverview__container__next__link__svg {
     width: 25px;
   }
 }
-.projectOverview .projectOverview__container__next__link svg:hover {
+.projectOverview .projectOverview__container__next__link__svg:hover {
   filter: blur(1.4px) brightness(1.5);
   fill: #f3d053;
 }
@@ -370,11 +369,12 @@ table {
   }
 }
 .projectHeader__separation {
-  border-bottom: 0.7px solid rgba(255, 255, 255, 0.705);
+  border-bottom: 0.7px solid;
   margin: 1.5rem 0 1.5rem;
+  opacity: 0.6;
 }
 .projectHeader__separation__lateral {
-  border-right: 0.7px solid rgba(255, 255, 255, 0.705);
+  border-right: 0.7px solid;
 }
 .projectHeader__introduction {
   display: flex;
@@ -426,7 +426,7 @@ table {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: white;
+  color: inherit;
   margin-right: 4rem;
 }
 .projectHeader__link__website__svg {
@@ -440,7 +440,7 @@ table {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: white;
+  color: inherit;
 }
 .projectHeader__link__github__svg {
   width: 35px;
@@ -464,7 +464,7 @@ table {
   margin: 3rem auto;
   width: fit-content;
 }
-.inconBack svg {
+.inconBack__svg {
   fill: white;
   width: 60px;
   text-decoration: none;
@@ -472,7 +472,7 @@ table {
   filter: blur(0px) brightness(1);
   transition: 0.1s ease-in;
 }
-.inconBack svg:hover {
+.inconBack__svg:hover {
   filter: blur(1.4px) brightness(1.5);
   fill: #f3d053;
 }
@@ -726,10 +726,6 @@ table {
 
 .light-mode-svg {
   fill: #1d1d1d;
-}
-
-.light-mode-line {
-  border-left: solid 2px #1d1d1d;
 }
 
 body {

@@ -14,9 +14,8 @@
 
         &__logo {
             width: 8rem;
-            color: aqua;
-            & img {
-            fill: aqua;
+            &__svg {
+            fill: vars.$color-text;
             }
         }
 
@@ -27,13 +26,14 @@
 
                 &__item {
                     z-index: 0;
-                    color: vars.$color-text;
+                    color: inherit;
                     padding: 1rem;
                     text-decoration: none;
                     position: relative;
                     @media (max-width: 450px) {
                         font-size: 0.9rem ;
                       }
+
                     
                     &::after{
                         z-index: -1;

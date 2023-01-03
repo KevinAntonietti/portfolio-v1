@@ -36,10 +36,11 @@
     }
 
   &__separation {
-    border-bottom: 0.7px solid vars.$color-grey;
+    border-bottom: 0.7px solid ;
     margin: 1.5rem 0 1.5rem;
+    opacity: 0.6;
     &__lateral {
-      border-right: 0.7px solid vars.$color-grey;
+      border-right: 0.7px solid ;
     }
   }
 
@@ -88,7 +89,7 @@
       display: flex;
       align-items: center;
       text-decoration: none;
-      color: vars.$color-text;
+      color: inherit;
       margin-right: 4rem;
       &__svg {
         width: 35px;
@@ -103,7 +104,7 @@
         display: flex;
         align-items: center;
         text-decoration: none;
-        color: vars.$color-text;
+        color: inherit;
         &__svg {
           width: 35px;
           margin-left: 1rem;
@@ -131,7 +132,7 @@
 .inconBack {
   margin: 3rem auto;
   width: fit-content;
-  & svg {
+  &__svg {
   fill: vars.$color-text;
   width: 60px;
   text-decoration: none;
