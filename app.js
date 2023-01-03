@@ -16,6 +16,10 @@ app.use(express.static(__dirname + '/public'));
 // Router
 app.use(router);
 
+// Dark & light mode 
+
+
+
 // Server
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
