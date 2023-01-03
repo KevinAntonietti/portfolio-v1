@@ -532,9 +532,9 @@ table {
     width: 35%;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 1080px) {
   .aboutPage__header__left__down__img {
-    margin-bottom: 1rem;
+    display: none;
   }
 }
 .aboutPage__header__left__down__img img {
@@ -683,6 +683,7 @@ table {
 .contactContenair {
   display: flex;
   justify-content: space-between;
+  min-height: 100vh;
 }
 .contactContenair__left {
   margin: 6rem 0 0 10rem;
@@ -705,11 +706,21 @@ table {
   }
 }
 
+.footerContainer {
+  height: 30px;
+  bottom: 0;
+  margin: 7rem auto;
+}
+.footerContainer__copyright {
+  text-align: center;
+}
+
 body {
   background-color: #1d1d1d;
   font-family: "Roboto", sans-serif;
   color: white;
   font-size: 20px;
+  min-height: 100%;
 }
 
 h1 {

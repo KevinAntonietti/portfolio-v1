@@ -1,0 +1,11 @@
+@use "vars";
+
+.footerContainer {
+    height: 30px;
+    bottom: 0;
+    margin: 7rem auto;
+
+    &__copyright {
+        text-align: center;
+        }
+    }
