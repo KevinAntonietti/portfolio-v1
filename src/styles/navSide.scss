@@ -19,8 +19,7 @@
   }
 
   &__picto {
-    
-    & svg {
+    &__svg {
         margin-top: 1.5rem;
         width: 24px;
         height: 24px;
@@ -41,3 +40,5 @@
     }
   }
 }
+
+

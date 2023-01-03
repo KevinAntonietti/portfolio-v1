@@ -14,6 +14,10 @@
 
         &__logo {
             width: 8rem;
+            color: aqua;
+            & img {
+            fill: aqua;
+            }
         }
 
         &__nav {

@@ -4,23 +4,19 @@ $font-second : 'Roboto',
 sans-serif;
 
 
-
+// Main theme
 $color-background: #1d1d1d;
 $color-text: white;
 $color-display: #f3d053;
 $color-grey:rgba(255, 255, 255, 0.705);
 
-@mixin dark-mode {
-    $color-background: #1d1d1d;
-    $color-text: white;
-    $color-display: #f3d053;
-    $color-grey:rgba(255, 255, 255, 0.705)};
+
+
+// light mode
+$color-background-light: white;
+$color-text-light:#1d1d1d;
+$color-display-light: #7653f3;
+$color-grey-light:rgba(66, 66, 66, 0.705)
 
 
 
-@mixin light-mode {
-    $color-background: white;
-    $color-text:#1d1d1d;
-    $color-display: #7653f3;
-    $color-grey:rgba(66, 66, 66, 0.705)
-};

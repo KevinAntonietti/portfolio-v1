@@ -69,6 +69,10 @@ table {
 }
 .header__logo {
   width: 8rem;
+  color: aqua;
+}
+.header__logo img {
+  fill: aqua;
 }
 .header__nav {
   display: flex;
@@ -124,7 +128,7 @@ table {
   border-left: solid 2px white;
   height: 6rem;
 }
-.navSide__picto svg {
+.navSide__picto__svg {
   margin-top: 1.5rem;
   width: 24px;
   height: 24px;
@@ -132,12 +136,12 @@ table {
   filter: blur(0px) brightness(1);
   transition: 0.1s ease-in;
 }
-.navSide__picto svg:hover {
+.navSide__picto__svg:hover {
   filter: blur(1.4px) brightness(1.5);
   fill: #f3d053;
 }
 @media (max-width: 650px) {
-  .navSide__picto svg {
+  .navSide__picto__svg {
     width: 1rem;
     margin-top: 0.75rem;
   }
@@ -715,10 +719,23 @@ table {
   text-align: center;
 }
 
+.light-mode-body {
+  background-color: white;
+  color: #1d1d1d;
+}
+
+.light-mode-svg {
+  fill: #1d1d1d;
+}
+
+.light-mode-line {
+  border-left: solid 2px #1d1d1d;
+}
+
 body {
   background-color: #1d1d1d;
-  font-family: "Roboto", sans-serif;
   color: white;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   min-height: 100%;
 }

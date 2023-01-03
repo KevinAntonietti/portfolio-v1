@@ -14,10 +14,24 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,300;0,700;1,300;1,700&display=swap");
 
+.light-mode-body {
+  background-color: vars.$color-background-light;
+  color: vars.$color-text-light;
+}
+
+.light-mode-svg {
+  fill: vars.$color-text-light;
+ }
+
+ .light-mode-line {
+  border-left: solid 2px vars.$color-text-light;
+ }
+
 body {
+  
   background-color: vars.$color-background;
-  font-family: vars.$font-second;
   color: vars.$color-text;
+  font-family: vars.$font-second;
   font-size: 20px;
   min-height: 100%
 }
@@ -31,10 +45,6 @@ h1 {
   font-family: vars.$font-first;
   letter-spacing: 0.2rem;
 
-  // @media (max-width: 1280px) {
-  //   font-size: 4rem;
-  //   line-height: 5rem;
-  // }
 
   @media (max-width: 1780px) {
     font-size: 5rem;
