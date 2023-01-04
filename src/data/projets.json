@@ -10,7 +10,7 @@
         "name": "Gamer Helper",
         "year": "2023",
         "type": "Application web",
-        "tags": ["React", "Node.js"],
+        "tags": ["React", "Zustand", "React-router","Node.js", "Postgres"],
         "duration": "1 mois",
         "role" : "Product Owner",
         "team": "Maxime Q. | Thomas C. | Houmaïr S. | Thomas Y.",
@@ -33,7 +33,7 @@
         "duration": "Deux semaines",
         "role" : "Developpeur",
         "team": null,
-        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+        "description": "Dans le cadre de la création de mon portfolio personnel, j'ai décidé de faire le choix de technologies légères et faciles à mettre en œuvre. Mon objectif était de pouvoir concevoir un site internet tout en ayant un contrôle total sur tous les aspects de la production, allant du prototypage à la phase de développement et jusqu'au déploiement final. Pour atteindre cet objectif, j'ai choisi d'utiliser Node.js, EJS, HTML et SCSS, qui sont des outils performants et simples à utiliser. Grâce à eux, j'ai pu mettre en place mon projet rapidement et de manière efficace.",
         "link": "test.fr"
     }
 

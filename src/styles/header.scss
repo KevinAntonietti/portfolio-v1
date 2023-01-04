@@ -12,6 +12,31 @@
     flex-direction: column;
     }
 
+    &__lightMode {
+     
+
+        &__svg{
+    
+            #rectangle {
+                
+            fill: vars.$color-display;
+            }
+
+            #Typo {
+            fill: vars.$color-display;
+            filter: blur(1.4px);
+           
+            }
+            #Underline {
+                fill: none;
+                stroke: vars.$color-text;
+                stroke-linecap: round;
+                stroke-width: 1px;
+            }
+
+        }
+    }
+
         &__logo {
             width: 8rem;
             &__svg {

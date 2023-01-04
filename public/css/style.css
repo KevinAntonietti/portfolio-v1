@@ -67,6 +67,19 @@ table {
     flex-direction: column;
   }
 }
+.header__lightMode__svg #rectangle {
+  fill: #f3d053;
+}
+.header__lightMode__svg #Typo {
+  fill: #f3d053;
+  filter: blur(1.4px);
+}
+.header__lightMode__svg #Underline {
+  fill: none;
+  stroke: white;
+  stroke-linecap: round;
+  stroke-width: 1px;
+}
 .header__logo {
   width: 8rem;
 }
@@ -188,7 +201,7 @@ table {
   font-weight: 700;
   font-size: 1.3rem;
   text-decoration: none;
-  color: white;
+  color: inherit;
 }
 
 .project-container {
