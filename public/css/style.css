@@ -67,8 +67,18 @@ table {
     flex-direction: column;
   }
 }
+.header__lightMode__svg #rectangle-underline {
+  fill: none;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  stroke-width: 1px;
+}
 .header__lightMode__svg #rectangle {
-  fill: #f3d053;
+  fill: none;
+  stroke: #f3d053;
+  filter: blur(1.4px);
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
 }
 .header__lightMode__svg #Typo {
   fill: #f3d053;

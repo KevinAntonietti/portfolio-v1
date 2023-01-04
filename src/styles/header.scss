@@ -17,10 +17,20 @@
 
         &__svg{
     
-            #rectangle {
-                
-            fill: vars.$color-display;
+            #rectangle-underline {  
+                fill: none; 
+                stroke: #fff;
+                stroke-miterlimit: 10;
+                stroke-width: 1px;
             }
+
+            #rectangle {   
+                fill: none;
+                stroke: vars.$color-display;
+                filter: blur(1.4px);
+                stroke-miterlimit: 10;
+                stroke-width: 2px;
+                }
 
             #Typo {
             fill: vars.$color-display;
