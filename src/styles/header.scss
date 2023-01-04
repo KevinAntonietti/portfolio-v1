@@ -1,97 +1,138 @@
-@use 'vars';
+@use "vars";
 
 .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: vars.$font-second;
+  margin-bottom: 4rem;
+
+  @media (max-width: 925px) {
+    flex-direction: column;
+  }
+
+  &__lightMode {
+    transform: scale(90%);
+    @media (max-width: 925px) {
+      margin: 1rem auto;
+      transform: scale(80%);
+    }
+
+    &__off__svg {
+      width: 170px;
+      height: 50px;
+    }
+    &__on__svg {
+      width: 170px;
+      height: 50px;
+
+      #rectangle-underline {
+        fill: none;
+        stroke: vars.$color-text;
+        stroke-miterlimit: 10;
+        stroke-width: 1px;
+        animation: flicker 2s ease-in-out infinite alternate;
+      }
+
+      #rectangle {
+        fill: none;
+        stroke: vars.$color-display;
+        filter: blur(1.4px);
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      #Typo {
+        fill: vars.$color-display;
+        filter: blur(1.4px);
+      }
+
+      #Underline {
+        fill: none;
+        stroke: vars.$color-text;
+        stroke-linecap: round;
+        stroke-width: 1px;
+      }
+    }
+  }
+
+  &__logo {
+    width: 8rem;
+    &__svg {
+      fill: vars.$color-text;
+    }
+  }
+
+  &__nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-family: vars.$font-second;
-    margin-bottom: 4rem;
+    flex-wrap: nowrap;
 
-    @media (max-width: 650px) {
-    flex-direction: column;
+    &__item {
+      z-index: 0;
+      color: inherit;
+      padding: 1rem;
+      text-decoration: none;
+      position: relative;
+      @media (max-width: 450px) {
+        font-size: 0.9rem;
+      }
+
+      &::after {
+        z-index: -1;
+        content: "";
+        background-color: rgba(vars.$color-display, 1);
+        position: absolute;
+        left: 1rem;
+        bottom: 1rem;
+        width: 0%;
+        height: 8px;
+        transition: 0.3s ease-in-out;
+        filter: blur(2px) brightness(1);
+      }
+
+      &:hover {
+        &::after {
+          content: "";
+          width: 70%;
+          filter: blur(1px) brightness(1.1);
+        }
+      }
     }
+  }
+}
 
-    &__lightMode {
-     
+.onOff {
+  display: none;
+}
 
-        &__svg{
-    
-            #rectangle-underline {  
-                fill: none; 
-                stroke: #fff;
-                stroke-miterlimit: 10;
-                stroke-width: 1px;
-            }
-
-            #rectangle {   
-                fill: none;
-                stroke: vars.$color-display;
-                filter: blur(1.4px);
-                stroke-miterlimit: 10;
-                stroke-width: 2px;
-                }
-
-            #Typo {
-            fill: vars.$color-display;
-            filter: blur(1.4px);
-           
-            }
-            #Underline {
-                fill: none;
-                stroke: vars.$color-text;
-                stroke-linecap: round;
-                stroke-width: 1px;
-            }
-
-        }
-    }
-
-        &__logo {
-            width: 8rem;
-            &__svg {
-            fill: vars.$color-text;
-            }
-        }
-
-        &__nav {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-
-                &__item {
-                    z-index: 0;
-                    color: inherit;
-                    padding: 1rem;
-                    text-decoration: none;
-                    position: relative;
-                    @media (max-width: 450px) {
-                        font-size: 0.9rem ;
-                      }
-
-                    
-                    &::after{
-                        z-index: -1;
-                        content: '';
-                        background-color: rgba(vars.$color-display,1);
-                        position: absolute;
-                        left: 1rem;
-                        bottom: 1rem;
-                        width: 0%;
-                        height: 8px;
-                        transition: 0.3s ease-in-out;
-                        filter: blur(2px) brightness(1);
-                        }
-                     
-                        &:hover {
-                            &::after{
-                                content: '';
-                                width: 70%;
-                                filter: blur(1px) brightness(1.1);                             
-                               
-                            }
-                        }
-                    }
-               
-        }
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  18% {
+    opacity: 0.4;
+  }
+  22% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.4;
+  }
+  53% {
+    opacity: 1;
+  }
+  57% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 1;
+  }
+  82% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
 }

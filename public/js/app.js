@@ -1,7 +1,13 @@
 let isLight = false;
 
 const app = {
+
+  // Btn
   btn: document.getElementById("btn-mode"),
+
+  //Btn SVG
+  btnOn : document.querySelector(".header__lightMode__on__svg"),
+  btnOff : document.querySelector(".header__lightMode__off__svg"),
 
   // Navside element
   navside: document.querySelectorAll(".navSide__picto__svg"),
@@ -41,6 +47,17 @@ const app = {
   },
 
   setLightMode: (isLight) => {
+
+    if (isLight===true) {
+      app.btnOn.classList.add("onOff")
+      app.btnOff.classList.remove("onOff")
+    }
+    else {
+      app.btnOn.classList.remove("onOff")
+      app.btnOff.classList.add("onOff")
+    }
+
+
     // CHanger dans le body
     document.body.classList.toggle("light-mode-body",isLight);
 

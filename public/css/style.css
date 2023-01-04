@@ -62,29 +62,47 @@ table {
   font-family: "Roboto", sans-serif;
   margin-bottom: 4rem;
 }
-@media (max-width: 650px) {
+@media (max-width: 925px) {
   .header {
     flex-direction: column;
   }
 }
-.header__lightMode__svg #rectangle-underline {
+.header__lightMode {
+  transform: scale(90%);
+}
+@media (max-width: 925px) {
+  .header__lightMode {
+    margin: 1rem auto;
+    transform: scale(80%);
+  }
+}
+.header__lightMode__off__svg {
+  width: 170px;
+  height: 50px;
+}
+.header__lightMode__on__svg {
+  width: 170px;
+  height: 50px;
+}
+.header__lightMode__on__svg #rectangle-underline {
   fill: none;
-  stroke: #fff;
+  stroke: white;
   stroke-miterlimit: 10;
   stroke-width: 1px;
+  animation: flicker 2s ease-in-out infinite alternate;
 }
-.header__lightMode__svg #rectangle {
+.header__lightMode__on__svg #rectangle {
   fill: none;
   stroke: #f3d053;
   filter: blur(1.4px);
   stroke-miterlimit: 10;
   stroke-width: 2px;
 }
-.header__lightMode__svg #Typo {
+.header__lightMode__on__svg #Typo {
   fill: #f3d053;
   filter: blur(1.4px);
 }
-.header__lightMode__svg #Underline {
+.header__lightMode__on__svg #Underline {
   fill: none;
   stroke: white;
   stroke-linecap: round;
@@ -131,6 +149,39 @@ table {
   filter: blur(1px) brightness(1.1);
 }
 
+.onOff {
+  display: none;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  18% {
+    opacity: 0.4;
+  }
+  22% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.4;
+  }
+  53% {
+    opacity: 1;
+  }
+  57% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 1;
+  }
+  82% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .navSide {
   display: flex;
   flex-direction: column;
