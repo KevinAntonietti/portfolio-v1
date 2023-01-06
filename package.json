@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "nodemon": "sass --watch ./src/styles/index.scss:./public/css/style.css & node ./bin/www",
-    "start": "node ./bin/www & sass --watch ./src/styles/index.scss:./public/css/style.css",
-    "start_W": " start node ./bin/www & start sass --watch ./src/styles/index.scss:./public/css/style.css"
+    "nodemon": "sass --watch ./src/styles/index.scss:./public/css/style.css && node ./bin/www",
+    "start": "sass --watch ./src/styles/index.scss:./public/css/style.css & node ./bin/www",
+    "start_W": " start node ./bin/www && start sass --watch ./src/styles/index.scss:./public/css/style.css",
+    "start_only": "node ./bin/www"
   },
   "author": "",
   "license": "ISC",

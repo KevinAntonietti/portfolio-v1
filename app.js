@@ -16,6 +16,7 @@ const app = express();
 app.set('views', './views');
 app.set('view engine', 'ejs');
 
+
 // MW
 app.use(logger('dev'));
 app.use(express.json());
@@ -23,6 +24,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(helmet());
+require('dotenv').config()
 
 
 // Router
