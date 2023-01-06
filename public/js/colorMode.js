@@ -1,6 +1,6 @@
 let isLight = false;
 
-const app = {
+const colorMode = {
 
   // Btn
   btn: document.getElementById("btn-mode"),
@@ -33,15 +33,15 @@ const app = {
     const savedIsLight = localStorage.getItem('isLight');
     if (savedIsLight !== null) {
       isLight = savedIsLight === 'true';
-      app.setLightMode(isLight);
+      colorMode.setLightMode(isLight);
     }
-    app.toggleColorMod();
+    colorMode.toggleColorMod();
   },
 
   toggleColorMod: () => {
-    app.btn.addEventListener("click", () => {
+    colorMode.btn.addEventListener("click", () => {
       isLight = !isLight;
-      app.setLightMode(isLight);
+      colorMode.setLightMode(isLight);
       localStorage.setItem('isLight', isLight);
     });
   },
@@ -49,12 +49,13 @@ const app = {
   setLightMode: (isLight) => {
 
     if (isLight===true) {
-      app.btnOn.classList.add("onOff")
-      app.btnOff.classList.remove("onOff")
+      colorMode.btnOn.classList.add("onOff")
+      colorMode.btnOff.classList.remove("onOff")
+      
     }
     else {
-      app.btnOn.classList.remove("onOff")
-      app.btnOff.classList.add("onOff")
+      colorMode.btnOn.classList.remove("onOff")
+      colorMode.btnOff.classList.add("onOff")
     }
 
 
@@ -62,30 +63,30 @@ const app = {
     document.body.classList.toggle("light-mode-body",isLight);
 
     //changer dans la navside
-    app.navside.forEach((item) => {
+    colorMode.navside.forEach((item) => {
       item.classList.toggle("light-mode-svg",isLight);
     });
 
     //changer dans le header
-    app.headerLogo.classList.toggle("light-mode-svg",isLight);
+    colorMode.headerLogo.classList.toggle("light-mode-svg",isLight);
 
     // Changer dans la page projetOverview
-    app.projectOverview.forEach((item) => {
+    colorMode.projectOverview.forEach((item) => {
       item.classList.toggle("light-mode-svg",isLight);
     });
 
     // CHanger dans la page projet
-    app.projectPageWebsite.forEach((item) => {
+    colorMode.projectPageWebsite.forEach((item) => {
       item.classList.toggle("light-mode-svg",isLight);
     });
-    app.projectPageGitHub.forEach((item) => {
+    colorMode.projectPageGitHub.forEach((item) => {
       item.classList.toggle("light-mode-svg",isLight);
     });
 
-    app.projectPageBack.forEach((item) => {
-      item.classList.toggle("light-mode-svg",!isLight);
+    colorMode.projectPageBack.forEach((item) => {
+      item.classList.toggle("light-mode-svg",isLight);
     });
   },
 };
 
-document.addEventListener("DOMContentLoaded", app.init());
+document.addEventListener("DOMContentLoaded", colorMode.init());

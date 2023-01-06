@@ -13,6 +13,7 @@
   }
 
   &__lightMode {
+    cursor: cell;
     transform: scale(90%);
     @media (max-width: 925px) {
       margin: 1rem auto;
@@ -32,7 +33,7 @@
         stroke: vars.$color-text;
         stroke-miterlimit: 10;
         stroke-width: 1px;
-        animation: flicker 2s ease-in-out infinite alternate;
+        
       }
 
       #rectangle {
@@ -41,11 +42,13 @@
         filter: blur(1.4px);
         stroke-miterlimit: 10;
         stroke-width: 2px;
+        animation:flicker 4s ease-in-out infinite alternate,
       }
 
       #Typo {
         fill: vars.$color-display;
         filter: blur(1.4px);
+        animation: flicker 4s ease-in-out infinite alternate
       }
 
       #Underline {
@@ -111,27 +114,83 @@
   0% {
     opacity: 1;
   }
-  18% {
-    opacity: 0.4;
+  5% {
+    opacity: 0.8;
   }
-  22% {
+
+  7% {
+    opacity: 1;
+  }
+  9% {
+    opacity: 0.8;
+  }
+
+  11% {
+    opacity: 1;
+  }
+  
+  18% {
+    opacity: 0.8;
+  }
+
+  21% {
     opacity: 1;
   }
   25% {
-    opacity: 0.4;
+    opacity: 0.8;
   }
-  53% {
+
+  28% {
     opacity: 1;
   }
-  57% {
-    opacity: 0.4;
+  31% {
+    opacity: 0.8;
   }
+
+  35% {
+    opacity: 1;
+  }
+  38% {
+    opacity: 0.8;
+  }
+
+  44% {
+    opacity: 1;
+  }
+  47% {
+    opacity: 0.8;
+  }
+
+
+  
+  78% {
+    opacity: 0.8;
+  }
+
+
   80% {
+    filter: blur(2px);
     opacity: 1;
   }
   82% {
-    opacity: 0.4;
+     filter: blur(1.4px);
+    opacity: 0;
   }
+
+  84% {
+    opacity: 1;
+  }
+  87% {
+    opacity: 0;
+  }
+
+  97% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+
   100% {
     opacity: 1;
   }

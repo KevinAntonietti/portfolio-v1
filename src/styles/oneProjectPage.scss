@@ -15,32 +15,31 @@
     padding-left: 0.2rem;
   }
 
-  
-    &__title {
+  &__title {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    &__name {
       display: flex;
       align-items: baseline;
-      justify-content: space-between;
-  
-      &__name {
-        display: flex;
-        align-items: baseline;
-        font-size: 7rem;
-        padding-bottom: 1rem;
-        @media (max-width: 1060px) {
-          font-size: 5rem;
-        }
-        @media (max-width: 780px) {
-          font-size: 3rem;
-        }
+      font-size: 7rem;
+      padding-bottom: 1rem;
+      @media (max-width: 1060px) {
+        font-size: 5rem;
+      }
+      @media (max-width: 780px) {
+        font-size: 3rem;
       }
     }
+  }
 
   &__separation {
-    border-bottom: 0.7px solid ;
+    border-bottom: 0.7px solid;
     margin: 1.5rem 0 1.5rem;
     opacity: 0.6;
     &__lateral {
-      border-right: 0.7px solid ;
+      border-right: 0.7px solid;
     }
   }
 
@@ -64,9 +63,9 @@
     }
 
     &__team {
-    @media (max-width: 450px) {
-      font-size: 0.5rem;
-    }
+      @media (max-width: 450px) {
+        font-size: 0.5rem;
+      }
     }
   }
 
@@ -100,21 +99,19 @@
       }
     }
 
-      &__github {
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        color: inherit;
-        &__svg {
-          width: 35px;
-          margin-left: 1rem;
-          fill: vars.$color-grey;
-          filter: blur(0px) brightness(1);
-          transition: 0.1s ease-in;
-        }
+    &__github {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+      &__svg {
+        width: 35px;
+        margin-left: 1rem;
+        fill: vars.$color-grey;
+        filter: blur(0px) brightness(1);
+        transition: 0.1s ease-in;
       }
-   
-   
+    }
   }
 }
 
@@ -133,21 +130,18 @@
   margin: 3rem auto;
   width: fit-content;
   &__svg {
-  fill: vars.$color-text;
-  width: 60px;
-  text-decoration: none;
-  color: vars.$color-text;
-  filter: blur(0px) brightness(1);
-  transition: 0.1s ease-in;
-  &:hover {
-    filter: blur(1.4px) brightness(1.5);
-  fill: vars.$color-display;
+    fill: vars.$color-text;
+    width: 60px;
+    text-decoration: none;
+    color: vars.$color-text;
+    filter: blur(0px) brightness(1);
+    transition: 0.1s ease-in;
+    &:hover {
+      filter: blur(1.4px) brightness(1.5);
+      fill: vars.$color-display;
+    }
   }
- 
 }
-}
-
-
 
 .projectHeader__link__website__svg:hover {
   filter: blur(1.4px) brightness(1.5);
@@ -157,7 +151,6 @@
   filter: blur(1.4px) brightness(1.5);
   fill: vars.$color-display;
 }
-
 
 .projectHeader__link__github__svg:hover {
   filter: blur(1.4px) brightness(1.5);
