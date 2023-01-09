@@ -34,7 +34,8 @@
         "role" : "Developpeur",
         "team": null,
         "description": "Dans le cadre de la création de mon portfolio personnel, j'ai décidé de faire le choix de technologies légères et faciles à mettre en œuvre. Mon objectif était de pouvoir concevoir un site internet tout en ayant un contrôle total sur tous les aspects de la production, allant du prototypage à la phase de développement et jusqu'au déploiement final. Pour atteindre cet objectif, j'ai choisi d'utiliser Node.js, EJS, HTML et SCSS, qui sont des outils performants et simples à utiliser. Grâce à eux, j'ai pu mettre en place mon projet rapidement et de manière efficace.",
-        "link": "test.fr"
+        "link": "",
+        "github" : ""
     }
 
 ]
