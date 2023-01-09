@@ -4,9 +4,7 @@
   "description": "",
   "scripts": {
     "nodemon": "sass --watch ./src/styles/index.scss:./public/css/style.css && node ./bin/www",
-    "start": "sass --watch ./src/styles/index.scss:./public/css/style.css & node ./bin/www",
-    "start_W": " start node ./bin/www && start sass --watch ./src/styles/index.scss:./public/css/style.css",
-    "start_only": "node ./bin/www"
+    "start": "sass source/styles/index.scss public/css/styles.css & node ./bin/www"
   },
   "author": "",
   "license": "ISC",
