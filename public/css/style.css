@@ -65,16 +65,17 @@ table {
 @media (max-width: 925px) {
   .header {
     flex-direction: column;
+    margin-bottom: 2rem;
   }
 }
 .header__lightMode {
   cursor: cell;
-  transform: scale(90%);
+  transform: scale(75%);
 }
 @media (max-width: 925px) {
   .header__lightMode {
-    margin: 1rem auto;
-    transform: scale(80%);
+    margin: 0.2rem auto;
+    transform: scale(55%);
   }
 }
 .header__lightMode__off__svg {
