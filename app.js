@@ -48,8 +48,3 @@ app.use((err, req, res, next) => {
 });
 
 module.exports = app;
-
-// Server
-// app.listen(port, () => {
-//     console.log(`Example app listening at http://localhost:${port}`);
-//     });
