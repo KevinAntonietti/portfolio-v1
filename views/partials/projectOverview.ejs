@@ -3,8 +3,8 @@
 
   <div class="projectOverview__container">
     <a href="projets/<%= item.slug %> " class="projectOverview__container__preview">
-      <img class="img-01" src="img/<%=item.thumbs01 %> " alt="" />
-      <img class="img-02" src="img/<%=item.thumbs02 %>" alt="" />
+      <img class="img-01" src="img/<%=item.thumbs01 %> " alt="Image couverture projet" />
+      <img class="img-02" src="img/<%=item.thumbs02 %>" alt="Image couverture projet au hover"  />
     </a>
 
     <div class="projectOverview__container__separation"></div>
@@ -38,6 +38,7 @@
         class="projectOverview__container__next__link"
         href="<%= item.link  %> "
         target="_blank"
+        title="lien vers le site web du projet"
       >
         <svg class="projectOverview__container__next__link__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
           <path

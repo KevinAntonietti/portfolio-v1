@@ -5,7 +5,6 @@
         "thumbs02":"Gamer_Helper_thumbs02.png",
         "picture01":"Gamer_Helper_picture01.png",
         "picture02":"Gamer_Helper_picture02.png",
-        "picture03": null,
         "slug": "gamer-helper",
         "name": "Gamer Helper",
         "year": "2023",
@@ -16,7 +15,7 @@
         "team": "Maxime Q. | Thomas C. | Houmaïr S. | Thomas Y.",
         "description": "Dans le cadre de la fin de ma formation chez O'clock, mon groupe et moi avons mis en place une application d'aide aux joueurs de jeux de gestion. </p><p> Pour l'instant, le site comprend une page contenant quatre composants \"drag and drop\" qui permettent de hiérarchiser ses tâches, prendre des notes, effectuer des calculs et minuter son temps de jeu et ses périodes de repos.</p><p> En un mois, nous avons créé l'application de manière autonome, de l'élaboration du cahier des charges jusqu'au déploiement du back-end et du front-end.L'application est développée avec React, Zustand & react router pour la partie front-end, et Node, Postgres et squitch pour la partie back-end.",
         "link": "https://gamer-helper.netlify.app/",
-        "github" : ""
+        "github" : "https://github.com/KevinAntonietti/portfolio-v1"
     },
     {
         "id": 2,

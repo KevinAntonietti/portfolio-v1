@@ -75,7 +75,7 @@ router.get('/contact', function (req,res) {
       ...res.locals,
       projets,
       title: `Contact`,
-      description: '',
+      description: 'Page contact - Kevin Antonietti',
       url: `/contact`,
     };
   res.render('contact')

@@ -4,6 +4,7 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const favicon = require('serve-favicon');
 
 // const helmet = require('helmet');
 
@@ -35,6 +36,8 @@ app.get('*', function(req, res){
     res.status(404).render('404')
   });
 
+// favicon
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 // error handler
 app.use((err, req, res, next) => {
