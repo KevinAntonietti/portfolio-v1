@@ -70,12 +70,12 @@ table {
 }
 .header__lightMode {
   cursor: cell;
-  transform: scale(75%);
+  transform: scale(60%);
 }
 @media (max-width: 925px) {
   .header__lightMode {
-    margin: 0.2rem auto;
-    transform: scale(55%);
+    margin: 0rem auto;
+    transform: scale(40%);
   }
 }
 .header__lightMode__off__svg {
