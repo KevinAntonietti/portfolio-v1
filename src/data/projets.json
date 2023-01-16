@@ -15,7 +15,7 @@
         "team": "Maxime Q. | Thomas C. | Houmaïr S. | Thomas Y.",
         "description": "Dans le cadre de la fin de ma formation chez O'clock, mon groupe et moi avons mis en place une application d'aide aux joueurs de jeux de gestion. </p><p> Pour l'instant, le site comprend une page contenant quatre composants \"drag and drop\" qui permettent de hiérarchiser ses tâches, prendre des notes, effectuer des calculs et minuter son temps de jeu et ses périodes de repos.</p><p> En un mois, nous avons créé l'application de manière autonome, de l'élaboration du cahier des charges jusqu'au déploiement du back-end et du front-end.L'application est développée avec React, Zustand & react router pour la partie front-end, et Node, Postgres et squitch pour la partie back-end.",
         "link": "https://gamer-helper.netlify.app/",
-        "github" : "https://github.com/KevinAntonietti/portfolio-v1"
+        "github" : "https://github.com/KevinAntonietti/Gamer-Helper"
     },
     {
         "id": 2,
@@ -34,7 +34,7 @@
         "team": null,
         "description": "Dans le cadre de la création de mon portfolio personnel, j'ai décidé de faire le choix de technologies légères et faciles à mettre en œuvre. Mon objectif était de pouvoir concevoir un site internet tout en ayant un contrôle total sur tous les aspects de la production, allant du prototypage à la phase de développement et jusqu'au déploiement final. Pour atteindre cet objectif, j'ai choisi d'utiliser Node.js, EJS, HTML et SCSS, qui sont des outils performants et simples à utiliser. Grâce à eux, j'ai pu mettre en place mon projet rapidement et de manière efficace.",
         "link": "",
-        "github" : ""
+        "github" : "https://github.com/KevinAntonietti/portfolio-v1"
     }
 
 ]
