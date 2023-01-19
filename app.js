@@ -1,12 +1,16 @@
 // Require dependencies
 const createError = require('http-errors');
+const compression = require('compression');
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const favicon = require('serve-favicon');
+const helmet = require('helmet');
+const bodyParser = require('body-parser');
 
-// const helmet = require('helmet');
+
+
 
 const router = require('./app/routers/router');
 
@@ -19,12 +23,15 @@ app.set('view engine', 'ejs');
 
 
 // MW
+app.use(compression());
+app.use(helmet());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-// app.use(helmet());
+
 require('dotenv').config()
 
 
