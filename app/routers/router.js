@@ -14,7 +14,9 @@ router.get('/', function (req,res) {
     description: 'Home',
     url: '/',
   };
-    res.render('home')
+    res.render('home', {
+
+    });
 });
 
 // Route to the project page
@@ -26,7 +28,9 @@ router.get('/projets', function (req,res) {
         description: 'Mes projets',
         url: '/projets',
       };
-    res.render('projectPage')
+    res.render('projectPage', {
+
+    });
 });
 
 // Route to the project overview area
@@ -35,7 +39,9 @@ router.get(function (req,res) {
         ...res.locals,
         projets,
       };
-    res.render('projectOverview')
+    res.render('projectOverview', {
+
+    });
 });
 
 // Route to the various projects
@@ -51,7 +57,9 @@ router.get('/projets/:slug', function (req,res) {
       description: 'Mes projets',
       url: `/projets/${item.slug}`,
     };
-  res.render('oneProjectPage')
+  res.render('oneProjectPage', {
+
+  });
 });
 
 
@@ -65,7 +73,9 @@ router.get('/about', function (req,res) {
       description: '',
       url: `/about`,
     };
-  res.render('about')
+  res.render('about', {
+
+  });
 });
 
 
@@ -79,7 +89,9 @@ router.get('/contact', function (req,res) {
       description: 'Page contact - Kevin Antonietti',
       url: `/contact`,
     };
-  res.render('contact')
+  res.render('contact', {
+
+  });
 });
 
 module.exports = router;
