@@ -1,6 +1,24 @@
 [
     {
         "id": 1,
+        "thumbs01":"knch_thumbs01.png",
+        "thumbs02":"knch_thumbs02.png",
+        "picture01":"",
+        "picture02":"",
+        "slug": "gamer-helper",
+        "name": "KNCH studio",
+        "year": "2023",
+        "type": "Application web",
+        "tags": ["React", "Redux Toolkit", "SCSS"],
+        "duration": "2 semaines",
+        "role" : ["Developpeur", "UI design"],
+        "team": null,
+        "description": "Afin de m'exercer à l'utilisation de Redux Toolkit, j'ai décidé de créer un site vitrine de studio en utilisant le minimum de bibliothèques. L'application KNCH comprend un portfolio qui fonctionne avec un système de filtres et de recherche. Les projets ont également des tags qui sont générés à partir d'un fichier JSON contenant les informations de chaque projet. L'objectif est que l'ajout d'un nouveau projet pour le studio se fasse exclusivement via le fichier JSON servant de données.",
+        "link": "https://knch.netlify.app/",
+        "github" : "https://github.com/KevinAntonietti/KNCH"
+    },
+    {
+        "id": 2,
         "thumbs01":"Gamer_Helper_thumbs01.png",
         "thumbs02":"Gamer_Helper_thumbs02.png",
         "picture01":"Gamer_Helper_picture01.png",
@@ -18,7 +36,7 @@
         "github" : "https://github.com/KevinAntonietti/Gamer-Helper"
     },
     {
-        "id": 2,
+        "id": 3,
         "thumbs01":"portfolio_thumbs01.png",
         "thumbs02":"portfolio_thumbs02.png",
         "picture01":"",
